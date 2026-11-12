@@ -69,6 +69,11 @@ The site runs without Firebase (pages show empty states), but booking and admin 
    npx firebase-tools deploy --only firestore:rules,firestore:indexes,storage --project <project-id>
    ```
 
+   The service-account key cannot deploy (it lacks the Service Usage permission), so either sign in with
+   `firebase-tools login` as a project owner, or create the two composite indexes from
+   `firebase/firestore.indexes.json` in the console (Firestore → Indexes → Manual), or by opening the link
+   in the error the first time a booking query runs.
+
 8. Seed starter data and create the owner login:
 
    ```bash
