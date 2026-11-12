@@ -261,6 +261,7 @@ export async function saveSettings(form: FormData) {
         businessName: str(form, "businessName").slice(0, 80),
         address: str(form, "address").slice(0, 200),
         phones: list(str(form, "phones")).slice(0, 6),
+        emergencyPhone: str(form, "emergencyPhone").slice(0, 30),
         whatsappNumber: str(form, "whatsappNumber").replace(/\D/g, ""),
         email: str(form, "email").slice(0, 120),
         staffAlertNumbers: list(str(form, "staffAlertNumbers")).map((n) => n.replace(/\D/g, "")).filter((n) => n.length >= 10).slice(0, 10),

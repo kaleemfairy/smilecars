@@ -34,7 +34,7 @@ const oldPages: Record<string, string> = {
   "/bookcar.html": "/book",
   "/thank-you.html": "/",
   "/covid-19.html": "/",
-  "/blog.html": "/",
+  "/blog.html": "/blog",
 };
 
 const nextConfig: NextConfig = {
@@ -67,7 +67,8 @@ const nextConfig: NextConfig = {
         destination,
         permanent: true,
       })),
-      { source: "/blog/:path*", destination: "/", permanent: true },
+      // Old blog posts keep their slugs, minus ".html".
+      { source: "/blog/:slug.html", destination: "/blog/:slug", permanent: true },
     ];
   },
 };

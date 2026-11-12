@@ -56,6 +56,7 @@ export default async function SettingsAdmin(props: PageProps<"/admin/settings">)
           <p className="mt-1 text-xs text-muted">With country code, one per line.</p>
         </div>
         {input("whatsappNumber", "WhatsApp click-to-chat number", s.whatsappNumber, { help: "With country code, e.g. 919962097400." })}
+        {input("emergencyPhone", "24/7 emergency / breakdown number", s.emergencyPhone, { help: "Shown in the footer and FAQ. Leave empty to hide." })}
         <div>
           <label htmlFor="notificationEmails" className="field-label">New-booking email alerts to</label>
           <textarea id="notificationEmails" name="notificationEmails" defaultValue={s.notificationEmails.join("\n")} className="field" />

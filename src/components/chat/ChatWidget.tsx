@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Bot, Loader2, MessageCircle, Send, X } from "lucide-react";
 
 interface Msg {
@@ -40,6 +41,7 @@ function renderText(text: string) {
 }
 
 export function ChatWidget() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Msg[]>([GREETING]);
   const [input, setInput] = useState("");
@@ -99,6 +101,9 @@ export function ChatWidget() {
       setBusy(false);
     }
   }
+
+  // The confirm step has a sticky "Submit booking" bar at the bottom; keep the bubble out of its way.
+  if (pathname === "/book/confirm" && !open) return null;
 
   return (
     <>

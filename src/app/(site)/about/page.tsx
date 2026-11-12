@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { getPublicSettings } from "@/lib/data";
+import Link from "next/link";
 import { phoneDigits } from "@/lib/format";
+import { Testimonials, TrustStrip } from "@/components/content/Trust";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -32,13 +34,41 @@ export default async function AboutPage() {
           We keep things simple: clear prices with GST included, a real person who calls you to confirm every booking,
           and a team you can reach throughout your trip.
         </p>
+
+        <h2>Why Smile Cars®</h2>
+        <ul>
+          <li><strong>Logo-free cars.</strong> No rental branding, so you drive privately, as if it were your own car.</li>
+          <li><strong>Doorstep delivery and pickup</strong> anywhere in Chennai: home, office, hotel, railway station or airport. Step out of the airport and start driving.</li>
+          <li><strong>Checked before every trip.</strong> Our technical team inspects and cleans each car before handover.</li>
+          <li><strong>24/7 support.</strong> Our team is available round the clock for bookings and help during your trip, and arranges a replacement car if needed.</li>
+          <li><strong>Daily, weekly, monthly and yearly plans</strong>, with special pricing for long-term rentals.</li>
+        </ul>
+
+        <h2>Other services</h2>
+        <ul>
+          <li><strong>Driver on request.</strong> For long drives, a professional driver can take the wheel and help with luggage.</li>
+          <li><strong>Wedding and event cars.</strong> Premium cars with a chauffeur for weddings and special occasions.</li>
+          <li><strong>Corporate rentals.</strong> Packages for companies and long-term vehicle management. We are an official transport partner for SriLankan Airlines, Kuwait Airways and Emirates.</li>
+          <li><strong>Attach your car.</strong> Car owners can <Link href="/attach-your-vehicle" className="font-semibold text-brand-700 underline">earn from their vehicle</Link> with us.</li>
+        </ul>
+        <p>For a driver, wedding car or corporate quote, call or WhatsApp us using the buttons on this page.</p>
+
         <h2>What you need to rent</h2>
         <ul>
-          <li>A valid driving licence</li>
+          <li>A valid driving licence (held for 3+ years; minimum age 24, or 27 for premium cars and big SUVs)</li>
           <li>Aadhaar card</li>
           <li>Employee ID or business proof</li>
+          <li>NRI and foreign customers: passport, international ID and an international driving licence valid in India</li>
         </ul>
       </div>
+
+      <div className="mt-8">
+        <TrustStrip />
+      </div>
+      <section className="mt-10">
+        <h2 className="mb-4 text-xl font-extrabold">What our customers say</h2>
+        <Testimonials />
+      </section>
 
       <section id="contact" className="card mt-8 scroll-mt-20 p-5">
         <h2 className="text-lg font-bold">Contact us</h2>

@@ -28,6 +28,7 @@ function bookingEmail(b: Booking, adminLink: string) {
     rows: [
       ["Customer", b.customerName],
       ["Phone / WhatsApp", b.phone],
+      ["Alternate number", b.alternatePhone],
       ["Email", b.email],
       ["Car", b.carName],
       ["Pickup", fmtDateTime(b.startAt)],

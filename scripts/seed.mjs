@@ -20,7 +20,9 @@ async function put(path, data) {
 await put("settings/general", {
   businessName: "Smile Cars®",
   address: "No.1076, 44th Street, TVS Colony, Anna Nagar West Extension, Chennai 600101",
-  phones: ["+91 99620 97400", "+91 99620 56400", "+91 90925 55444"],
+  phones: ["+91 99620 97400", "+91 99620 56400", "+91 90925 55444", "+91 93314 29331"],
+  emergencyPhone: "+91 44 4385 0256",
+  notificationEmails: ["bookings@smilecars.net", "rentacarbooking@yahoo.com"],
   whatsappNumber: "919962097400",
   email: "bookings@smilecars.net",
   staffAlertNumbers: [],

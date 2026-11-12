@@ -27,6 +27,7 @@ export function toBooking(doc: DocumentSnapshot<DocumentData>): Booking {
     endAt: d.endAt ?? 0,
     customerName: d.customerName ?? "",
     phone: d.phone ?? "",
+    alternatePhone: d.alternatePhone ?? "",
     email: d.email ?? "",
     address: d.address ?? "",
     notes: d.notes ?? "",
@@ -133,7 +134,8 @@ export interface CreateBookingInput {
   search: ValidSearch;
   carId: string;
   customerName: string;
-  phone: string; // already normalised to +91XXXXXXXXXX
+  phone: string; // already normalised to E.164, e.g. +919876543210
+  alternatePhone: string;
   email: string;
   address: string;
   notes: string;
@@ -198,6 +200,7 @@ export async function createBooking(input: CreateBookingInput): Promise<CreateBo
         endAt: search.endAt,
         customerName: input.customerName,
         phone: input.phone,
+        alternatePhone: input.alternatePhone,
         email: input.email,
         address: input.address,
         notes: input.notes,

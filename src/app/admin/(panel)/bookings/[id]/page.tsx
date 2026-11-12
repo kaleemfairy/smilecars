@@ -51,7 +51,7 @@ export default async function BookingDetail(props: PageProps<"/admin/bookings/[i
           <section className="card p-5">
             <h2 className="font-bold">Customer</h2>
             <p className="mt-2 text-lg font-semibold">{b.customerName}</p>
-            <p className="text-muted">{b.phone}{b.email ? ` · ${b.email}` : ""}</p>
+            <p className="text-muted">{b.phone}{b.alternatePhone ? ` · alt ${b.alternatePhone}` : ""}{b.email ? ` · ${b.email}` : ""}</p>
             <div className="mt-3 flex flex-wrap gap-2">
               <a href={`tel:+${phone}`} className="btn btn-sm btn-teal"><Phone className="size-4" aria-hidden />Call</a>
               <a href={`https://wa.me/${phone}?text=${encodeURIComponent(`Hi ${b.customerName}, this is Smile Cars about your booking ${b.ticket}.`)}`} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-whatsapp"><WhatsAppIcon className="size-4" />WhatsApp</a>

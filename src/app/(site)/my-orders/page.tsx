@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Search } from "lucide-react";
 import { findBookingsByPhone, findBookingsByTicket } from "@/lib/bookings";
-import { fmtDateTime, inr, LABELS, maskPhone, normalizeIndianMobile } from "@/lib/format";
+import { fmtDateTime, inr, LABELS, maskPhone, normalizeLookupPhone } from "@/lib/format";
 import { rateLimit } from "@/lib/rate-limit";
 import { requestTime } from "@/lib/time";
 import { StatusChip } from "@/components/booking/StatusChip";
@@ -44,14 +44,14 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
       error = "Too many searches. Please wait a few minutes and try again.";
     } else {
       try {
-        const phone = normalizeIndianMobile(q);
+        const phone = normalizeLookupPhone(q);
         if (/^[A-Za-z]{1,5}-?\d{1,6}$/.test(q)) {
           const t = q.toUpperCase().replace(/^([A-Z]+)(\d)/, "$1-$2");
           bookings = await findBookingsByTicket(t);
         } else if (phone) {
           bookings = await findBookingsByPhone(phone);
         } else {
-          error = "Enter a ticket number like SC-0042, or the 10-digit mobile number you booked with.";
+          error = "Enter a ticket number like SC-0042, or the phone number you booked with (add + and the country code for numbers outside India).";
         }
       } catch (err) {
         console.error("my-orders lookup failed", err);
@@ -66,7 +66,7 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
       <p className="mt-2 text-muted">Enter your ticket number or the phone number you booked with.</p>
       <form method="get" className="card mt-5 flex flex-col gap-3 p-4 sm:flex-row">
         <label htmlFor="q" className="sr-only">Ticket or phone number</label>
-        <input id="q" name="q" defaultValue={q} required placeholder="SC-0042 or 98400 12345" className="field flex-1" />
+        <input id="q" name="q" defaultValue={q} required placeholder="SC-0042, 98400 12345 or +971 50 123 4567" className="field flex-1" />
         <button type="submit" className="btn btn-primary"><Search className="size-5" aria-hidden />Find my booking</button>
       </form>
 

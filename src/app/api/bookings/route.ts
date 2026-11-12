@@ -2,7 +2,7 @@ import { NextResponse, after } from "next/server";
 import { z } from "zod";
 import { createBooking } from "@/lib/bookings";
 import { getSettings } from "@/lib/data";
-import { normalizeIndianMobile } from "@/lib/format";
+import { normalizeIndianMobile, normalizePhone } from "@/lib/format";
 import { notifyNewBooking } from "@/lib/notifications";
 import { validateSearch } from "@/lib/search";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
@@ -49,9 +49,14 @@ export async function POST(req: Request) {
       fieldErrors[key] ??= issue.message;
     }
   }
-  const phone = typeof body.phone === "string" ? normalizeIndianMobile(body.phone) : null;
-  if (!phone) fieldErrors.phone ??= "Please enter a valid 10-digit Indian mobile number.";
-  if (!parsed.success || !phone) {
+  const cc = typeof body.countryCode === "string" ? body.countryCode : "91";
+  const phone = typeof body.phone === "string" ? normalizePhone(cc, body.phone) : null;
+  const altRaw = typeof body.alternatePhone === "string" ? body.alternatePhone.trim() : "";
+  // The alternate number may be an Indian mobile even when the main one is foreign.
+  const alternatePhone = altRaw ? (normalizeIndianMobile(altRaw) ?? normalizePhone(cc, altRaw)) : "";
+  if (altRaw && !alternatePhone) fieldErrors.alternatePhone = "Please check the alternate number, or leave it blank.";
+  if (!phone) fieldErrors.phone ??= cc === "91" ? "Please enter a valid 10-digit Indian mobile number." : "Please check the phone number and country code.";
+  if (!parsed.success || !phone || (altRaw && !alternatePhone)) {
     return NextResponse.json({ error: "Please check the highlighted fields.", fieldErrors }, { status: 400 });
   }
 
@@ -61,6 +66,7 @@ export async function POST(req: Request) {
     carId: d.carId,
     customerName: d.customerName,
     phone,
+    alternatePhone: alternatePhone || "",
     email: d.email,
     address: d.address,
     notes: d.notes,

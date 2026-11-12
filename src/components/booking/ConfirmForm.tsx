@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Info, Loader2 } from "lucide-react";
-import { inr } from "@/lib/format";
+import { COUNTRY_CODES, inr } from "@/lib/format";
 import type { PriceBreakdown } from "@/lib/types";
 import type { SearchDefaults } from "./SearchForm";
 import { PriceTable } from "./PriceTable";
@@ -18,6 +18,7 @@ interface Props {
 export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
   const router = useRouter();
   const [price, setPrice] = useState(initialPrice);
+  const [countryCode, setCountryCode] = useState("91");
   const [code, setCode] = useState("");
   const [codeMsg, setCodeMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [applying, setApplying] = useState(false);
@@ -68,7 +69,9 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
           ...search,
           carId,
           customerName: form.get("customerName"),
+          countryCode,
           phone: form.get("phone"),
+          alternatePhone: form.get("alternatePhone"),
           email: form.get("email"),
           address: form.get("address"),
           notes: form.get("notes"),
@@ -121,7 +124,20 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
         <div>
           <label htmlFor="phone" className="field-label">WhatsApp number *</label>
           <div className="flex">
-            <span className="flex items-center rounded-l-xl border border-r-0 border-line-strong bg-brand-50 px-3 font-semibold">+91</span>
+            <label htmlFor="countryCode" className="sr-only">Country code</label>
+            <select
+              id="countryCode"
+              name="countryCode"
+              value={countryCode}
+              onChange={(e) => setCountryCode(e.target.value)}
+              className="min-h-12 w-28 shrink-0 rounded-l-xl border border-r-0 border-line-strong bg-brand-50 px-2 font-semibold"
+            >
+              {COUNTRY_CODES.map(([code, country]) => (
+                <option key={code + country} value={code}>
+                  +{code} {country}
+                </option>
+              ))}
+            </select>
             <input
               id="phone"
               name="phone"
@@ -129,7 +145,7 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
               inputMode="numeric"
               required
               autoComplete="tel-national"
-              placeholder="10-digit mobile number"
+              placeholder={countryCode === "91" ? "10-digit mobile number" : "Phone number"}
               className="field rounded-l-none"
               aria-invalid={!!fieldErrors.phone}
               aria-describedby={fieldErrors.phone ? "phone-error" : "phone-help"}
@@ -137,6 +153,21 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
           </div>
           <p id="phone-help" className="mt-1 text-xs text-muted">We call this number to confirm, and send your ticket on WhatsApp.</p>
           {err("phone")}
+        </div>
+        <div>
+          <label htmlFor="alternatePhone" className="field-label">Alternate number (optional)</label>
+          <input
+            id="alternatePhone"
+            name="alternatePhone"
+            type="tel"
+            inputMode="tel"
+            autoComplete="off"
+            placeholder="Family member or office number"
+            className="field"
+            aria-invalid={!!fieldErrors.alternatePhone}
+            aria-describedby={fieldErrors.alternatePhone ? "alternatePhone-error" : undefined}
+          />
+          {err("alternatePhone")}
         </div>
         <div>
           <label htmlFor="email" className="field-label">Email (optional)</label>

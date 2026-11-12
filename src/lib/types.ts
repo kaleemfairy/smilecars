@@ -68,6 +68,8 @@ export interface Settings {
   businessName: string;
   address: string;
   phones: string[];
+  /** 24/7 breakdown and emergency line, shown in the footer and FAQ. */
+  emergencyPhone: string;
   /** Number used for click-to-chat, digits with country code, e.g. 919962097400. */
   whatsappNumber: string;
   email: string;
@@ -139,6 +141,7 @@ export interface Booking {
   endAt: number;
   customerName: string;
   phone: string;
+  alternatePhone: string;
   email: string;
   address: string;
   notes: string;

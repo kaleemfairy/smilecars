@@ -10,7 +10,8 @@ export const TAGS = { cars: "cars", hubs: "hubs", settings: "settings" } as cons
 export const DEFAULT_SETTINGS: Settings = {
   businessName: "Smile Cars®",
   address: "No.1076, 44th Street, TVS Colony, Anna Nagar West Extension, Chennai 600101",
-  phones: ["+91 99620 97400", "+91 99620 56400"],
+  phones: ["+91 99620 97400", "+91 99620 56400", "+91 90925 55444", "+91 93314 29331"],
+  emergencyPhone: "+91 44 4385 0256",
   whatsappNumber: "919962097400",
   email: "bookings@smilecars.net",
   staffAlertNumbers: [],
@@ -128,6 +129,7 @@ export const getSettings = unstable_cache(
       businessName: str(d.businessName, s.businessName) || s.businessName,
       address: str(d.address, s.address) || s.address,
       phones: strArr(d.phones).length ? strArr(d.phones) : s.phones,
+      emergencyPhone: typeof d.emergencyPhone === "string" ? d.emergencyPhone : s.emergencyPhone,
       whatsappNumber: str(d.whatsappNumber, s.whatsappNumber) || s.whatsappNumber,
       email: str(d.email, s.email) || s.email,
       staffAlertNumbers: strArr(d.staffAlertNumbers),

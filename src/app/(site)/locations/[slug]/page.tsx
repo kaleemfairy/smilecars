@@ -7,6 +7,8 @@ import { safe } from "@/lib/safe";
 import { inr } from "@/lib/format";
 import { searchDefaults } from "@/lib/search-defaults";
 import { getLocation, LOCATIONS } from "@/content/locations";
+import { AREA_CONTENT } from "@/content/legacy";
+import { Prose } from "@/components/content/Prose";
 import { SearchForm } from "@/components/booking/SearchForm";
 import { FleetCard } from "@/components/cars/FleetCard";
 
@@ -33,6 +35,7 @@ export default async function LocationPage(props: PageProps<"/locations/[slug]">
     getPublicSettings(),
   ]);
   const { defaults, minDate } = searchDefaults(hubs, { hub: loc.hubId });
+  const legacy = AREA_CONTENT[loc.slug];
   const hub = hubs.find((h) => h.id === defaults.hub);
 
   const faq = [
@@ -81,11 +84,17 @@ export default async function LocationPage(props: PageProps<"/locations/[slug]">
         </div>
       </div>
 
+      {legacy && legacy.sections.length > 0 && (
+        <section className="mt-10 max-w-3xl" aria-label={`About self drive cars in ${loc.name}`}>
+          <Prose sections={legacy.sections} />
+        </section>
+      )}
+
       {cars.length > 0 && (
         <section className="mt-10">
           <h2 className="text-2xl font-extrabold">Popular cars in {loc.name}</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {cars.slice(0, 3).map((c) => <FleetCard key={c.id} car={c} kmPerDay={settings.includedKmPerDay} />)}
+            {cars.slice(0, 3).map((c) => <FleetCard key={c.id} car={c} kmPerDay={settings.includedKmPerDay} waNumber={settings.whatsappNumber} />)}
           </div>
         </section>
       )}

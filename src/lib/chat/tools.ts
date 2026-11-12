@@ -5,7 +5,7 @@ import { findAvailableCars, findBookingsByTicket } from "../bookings";
 import { getActiveCars, getActiveHubs, getCarById, getDiscount, getSettings } from "../data";
 import { quote } from "../pricing";
 import { searchToQuery, validateSearch } from "../search";
-import { fmtDateTime, inr, LABELS, normalizeIndianMobile } from "../format";
+import { fmtDateTime, inr, LABELS, normalizeLookupPhone } from "../format";
 import { BODY_TYPES, FUELS, RENTAL_TYPES, TRANSMISSIONS, DELIVERY_MODES } from "../types";
 
 // Server-side tools for the chatbot. Each one reuses the same queries as the website,
@@ -222,7 +222,7 @@ export async function runChatTool(name: string, input: unknown): Promise<string>
     }
     case "get_booking_status": {
       const d = z.object({ ticket: z.string(), phone: z.string() }).parse(input);
-      const phone = normalizeIndianMobile(d.phone);
+      const phone = normalizeLookupPhone(d.phone);
       const match = phone ? (await findBookingsByTicket(d.ticket)).find((b) => b.phone === phone) : undefined;
       if (!match) return JSON.stringify({ error: "No booking matches that ticket and phone number." });
       return JSON.stringify({

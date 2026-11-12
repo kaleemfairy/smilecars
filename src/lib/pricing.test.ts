@@ -30,6 +30,7 @@ const settings: Settings = {
   businessName: "Smile Cars",
   address: "",
   phones: [],
+  emergencyPhone: "",
   whatsappNumber: "",
   email: "",
   staffAlertNumbers: [],

@@ -56,7 +56,7 @@ export default async function BookPage(props: PageProps<"/book">) {
 
   // Step 2: available cars
   const search = result.search;
-  const { hub, results } = await findAvailableCars(search);
+  const { hub, results, settings } = await findAvailableCars(search);
   if (!hub) {
     return (
       <div className="container-page max-w-xl py-10">
@@ -90,6 +90,8 @@ export default async function BookPage(props: PageProps<"/book">) {
       <CarResults
         results={results.map((r) => ({ car: { ...r.car, regNumber: "" }, price: r.price }))}
         confirmQuery={query}
+        waNumber={settings.whatsappNumber}
+        tripLabel={`from ${fmtIsoDay(search.pd)} to ${fmtIsoDay(search.rd)}`}
       />
     </div>
   );

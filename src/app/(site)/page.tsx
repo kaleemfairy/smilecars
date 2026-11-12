@@ -7,6 +7,7 @@ import { searchDefaults } from "@/lib/search-defaults";
 import { SearchForm } from "@/components/booking/SearchForm";
 import { FleetCard } from "@/components/cars/FleetCard";
 import { LOCATIONS } from "@/content/locations";
+import { Testimonials, TrustStrip } from "@/components/content/Trust";
 import { BODY_TYPES } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -102,7 +103,7 @@ export default async function HomePage() {
           <h2 className="sr-only">Popular cars</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {cars.slice(0, 6).map((car) => (
-              <FleetCard key={car.id} car={car} kmPerDay={settings.includedKmPerDay} />
+              <FleetCard key={car.id} car={car} kmPerDay={settings.includedKmPerDay} waNumber={settings.whatsappNumber} />
             ))}
           </div>
         </section>
@@ -128,6 +129,17 @@ export default async function HomePage() {
             );
           })}
         </ul>
+      </section>
+
+      {/* Trust + reviews */}
+      <section className="container-page py-6">
+        <TrustStrip />
+      </section>
+      <section className="container-page py-10">
+        <h2 className="text-2xl font-extrabold">What our customers say</h2>
+        <div className="mt-5">
+          <Testimonials />
+        </div>
       </section>
 
       {/* Monthly + attach banners */}

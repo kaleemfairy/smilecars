@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Siren } from "lucide-react";
 import { phoneDigits } from "@/lib/format";
 import type { Settings } from "@/lib/types";
 import { LOCATIONS } from "@/content/locations";
@@ -26,6 +26,15 @@ export function SiteFooter({ settings }: { settings: Settings }) {
                 <a href={`tel:+${phoneDigits(p)}`} className="hover:text-white">{p}</a>
               </li>
             ))}
+            {settings.emergencyPhone && (
+              <li className="flex gap-2">
+                <Siren className="mt-0.5 size-4 shrink-0 text-accent-400" aria-hidden />
+                <span>
+                  24/7 emergency:{" "}
+                  <a href={`tel:+${phoneDigits(settings.emergencyPhone)}`} className="font-semibold text-white hover:underline">{settings.emergencyPhone}</a>
+                </span>
+              </li>
+            )}
             <li className="flex gap-2">
               <Mail className="mt-0.5 size-4 shrink-0" aria-hidden />
               <a href={`mailto:${settings.email}`} className="hover:text-white">{settings.email}</a>
@@ -43,6 +52,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
               ["/faq", "FAQ"],
               ["/about", "About us"],
               ["/attach-your-vehicle", "Attach your vehicle"],
+              ["/blog", "Blog"],
               ["/privacy", "Privacy policy"],
             ].map(([href, label]) => (
               <li key={href}>

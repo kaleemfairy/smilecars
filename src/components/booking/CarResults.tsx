@@ -7,6 +7,7 @@ import { inr, LABELS } from "@/lib/format";
 import { BODY_TYPES, FUELS, TRANSMISSIONS, type Car, type PriceBreakdown } from "@/lib/types";
 import { CarImage } from "@/components/cars/CarImage";
 import { SpecChips } from "@/components/cars/SpecChips";
+import { CarWhatsApp } from "@/components/cars/CarWhatsApp";
 
 interface Result {
   car: Car;
@@ -15,7 +16,17 @@ interface Result {
 
 type Sort = "price-asc" | "price-desc";
 
-export function CarResults({ results, confirmQuery }: { results: Result[]; confirmQuery: string }) {
+export function CarResults({
+  results,
+  confirmQuery,
+  waNumber = "",
+  tripLabel = "",
+}: {
+  results: Result[];
+  confirmQuery: string;
+  waNumber?: string;
+  tripLabel?: string;
+}) {
   const [q, setQ] = useState("");
   const [body, setBody] = useState<string[]>([]);
   const [trans, setTrans] = useState<string[]>([]);
@@ -175,9 +186,12 @@ export function CarResults({ results, confirmQuery }: { results: Result[]; confi
                   <p className="text-2xl font-extrabold tabular-nums">{inr(price.total)}</p>
                   <p className="text-xs text-muted">total for {price.days} day{price.days > 1 ? "s" : ""}, GST incl.</p>
                 </div>
-                <Link href={`/book/confirm?${confirmQuery}&car=${encodeURIComponent(car.id)}`} className="btn btn-primary">
-                  Select
-                </Link>
+                <div className="flex gap-2">
+                  <CarWhatsApp waNumber={waNumber} carName={car.name} extra={tripLabel} />
+                  <Link href={`/book/confirm?${confirmQuery}&car=${encodeURIComponent(car.id)}`} className="btn btn-primary">
+                    Select
+                  </Link>
+                </div>
               </div>
             </div>
           </li>

@@ -43,7 +43,7 @@ export default async function FleetPage(props: PageProps<"/cars">) {
       ) : (
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((car) => (
-            <FleetCard key={car.id} car={car} kmPerDay={settings.includedKmPerDay} />
+            <FleetCard key={car.id} car={car} kmPerDay={settings.includedKmPerDay} waNumber={settings.whatsappNumber} />
           ))}
         </div>
       )}
