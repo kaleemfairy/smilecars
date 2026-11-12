@@ -8,11 +8,11 @@
 @theme {
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 
-  /* Green from the client logo (#1abc9c). It is too light for text on white (2.4:1),
+  /* Green from the client logo (#17b59e). It is too light for text on white (2.4:1),
      so text and buttons use the darker shades of the same hue (600 = 5.0:1). */
   --color-brand-50: #eefbf8;
   --color-brand-100: #d1f4ec;
-  --color-brand-500: #1abc9c;
+  --color-brand-500: #17b59e;
   --color-brand-600: #1b7d6a;
   --color-brand-700: #18715f;
   --color-brand-800: #145c4d;
