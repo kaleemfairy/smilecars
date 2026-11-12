@@ -10,7 +10,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
     <footer className="mt-16 bg-brand-900 pb-28 pt-12 text-white/85">
       <div className="container-page grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Logo light />
+          <Logo onDark />
           <p className="mt-4 max-w-md text-sm leading-6">
             Self drive car rental in Chennai for over 29 years. Hatchbacks, sedans and SUVs by the day,
             week or month, delivered to your door. All prices include GST.

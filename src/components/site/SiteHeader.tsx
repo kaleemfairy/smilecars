@@ -19,7 +19,7 @@ export function SiteHeader({ settings }: { settings: Settings }) {
     <header className="sticky top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur-md">
       <div className="container-page flex h-16 items-center justify-between gap-3">
         <Link href="/" aria-label="Smile Cars home" className="shrink-0">
-          <Logo />
+          <Logo className="h-10 w-auto sm:h-11" />
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">

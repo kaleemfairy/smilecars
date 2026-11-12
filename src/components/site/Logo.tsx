@@ -1,17 +1,10 @@
-// Text logo placeholder. Replace with the client's logo file (public/logo.svg) when available.
-export function Logo({ light = false }: { light?: boolean }) {
-  return (
-    <span className="flex items-center gap-2">
-      <span
-        aria-hidden
-        className="flex size-9 items-center justify-center rounded-full bg-brand-600 text-lg font-extrabold text-accent-400"
-      >
-        ☺
-      </span>
-      <span className={`text-xl font-extrabold tracking-tight ${light ? "text-white" : "text-brand-700"}`}>
-        smile<span className={light ? "text-accent-400" : "text-ink"}>cars</span>
-        <sup className="text-[0.55em] font-semibold">®</sup>
-      </span>
-    </span>
+// Client logo (public/logo.png, 223×61 with a transparent background).
+// Ask the client for an SVG or a 2× PNG for sharper rendering on high-resolution phones.
+export function Logo({ onDark = false, className = "h-10 w-auto" }: { onDark?: boolean; className?: string }) {
+  const img = (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src="/logo.png" alt="Smile Cars® — Rent-a-car, Own a Smile" width={223} height={61} className={className} />
   );
+  // The logo has black lettering, so on dark backgrounds it sits on a white pill.
+  return onDark ? <span className="inline-flex rounded-xl bg-white px-3 py-2">{img}</span> : img;
 }
