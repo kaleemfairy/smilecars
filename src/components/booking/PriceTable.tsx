@@ -25,6 +25,21 @@ export function PriceTable({ price }: { price: PriceBreakdown }) {
           <dt className="text-base font-bold">Total rental</dt>
           <dd className="text-xl font-extrabold tabular-nums">{inr(price.total)}</dd>
         </div>
+        {!!price.advance && price.advance > 0 && (
+          <>
+            <div className="flex items-start justify-between gap-4 bg-accent-300/30 px-2 py-2.5">
+              <dt>
+                <strong>Advance to confirm</strong>
+                <span className="block text-xs text-muted">Paid by GPay, PhonePe or bank transfer when we call</span>
+              </dt>
+              <dd className="font-bold tabular-nums">{inr(price.advance)}</dd>
+            </div>
+            <div className="flex items-start justify-between gap-4 py-2.5">
+              <dt>Balance at delivery</dt>
+              <dd className="font-semibold tabular-nums">{inr(price.balance ?? price.total - price.advance)}</dd>
+            </div>
+          </>
+        )}
         {price.deposit > 0 && (
           <div className="flex items-start justify-between gap-4 py-2.5">
             <dt>

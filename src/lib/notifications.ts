@@ -40,6 +40,7 @@ function bookingEmail(b: Booking, adminLink: string) {
       ["Rent", `${inr(p.rent)} (${p.rentLabel})`],
       ["Discount", p.discount ? `${inr(p.discount)}${p.discountCode ? ` (${p.discountCode})` : ""}` : ""],
       ["Total", inr(p.total)],
+      ["Advance to collect", p.advance ? `${inr(p.advance)} (balance ${inr(p.balance ?? p.total - p.advance)} at delivery)` : ""],
       ["Refundable deposit", p.deposit ? inr(p.deposit) : ""],
     ],
     button: { label: "Open in admin", url: adminLink },

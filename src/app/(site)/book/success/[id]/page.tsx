@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CheckCircle2, Clock, FileText, PhoneCall, Truck } from "lucide-react";
+import { CheckCircle2, Clock, FileText, PhoneCall, Truck, Wallet } from "lucide-react";
 import { getBooking } from "@/lib/bookings";
 import { getPublicSettings } from "@/lib/data";
-import { fmtDateTime, LABELS, maskPhone, phoneDigits } from "@/lib/format";
+import { fmtDateTime, inr, LABELS, maskPhone, phoneDigits } from "@/lib/format";
 import { PriceTable } from "@/components/booking/PriceTable";
 import { CopyButton } from "@/components/booking/CopyButton";
 import { TrackBooking } from "@/components/booking/TrackBooking";
@@ -51,7 +51,10 @@ export default async function SuccessPage(props: PageProps<"/book/success/[id]">
       <section className="card mt-4 p-5">
         <h2 className="font-bold">What happens next</h2>
         <ol className="mt-3 space-y-3 text-sm">
-          <li className="flex gap-3"><PhoneCall className="size-5 shrink-0 text-brand-600" aria-hidden />We call you to verify your details and confirm the booking.</li>
+          <li className="flex gap-3"><PhoneCall className="size-5 shrink-0 text-brand-600" aria-hidden />We call you to verify your details.</li>
+          {!!booking.price.advance && (
+            <li className="flex gap-3"><Wallet className="size-5 shrink-0 text-brand-600" aria-hidden /><span>Pay the advance of <strong>{inr(booking.price.advance)}</strong> by GPay, PhonePe or bank transfer to confirm. The balance of {inr(booking.price.balance ?? booking.price.total - booking.price.advance)} is paid at delivery.</span></li>
+          )}
           <li className="flex gap-3"><FileText className="size-5 shrink-0 text-brand-600" aria-hidden />Keep your driving licence, Aadhaar and employee ID or business proof ready.</li>
           <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand-600" aria-hidden />We deliver the car to your address at the pickup time.</li>
         </ol>

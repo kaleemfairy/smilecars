@@ -76,6 +76,7 @@ export default async function CalendarPage(props: PageProps<"/admin/calendar">) 
               <tr key={car.id} className={car.active ? "" : "opacity-50"}>
                 <th scope="row" className="sticky left-0 z-10 border-b border-line bg-white px-3 py-2 text-left font-semibold">
                   {car.name}
+                  {car.units > 1 && <span className="block font-normal text-muted">{car.units} cars</span>}
                   {car.regNumber && <span className="block font-normal text-muted">{car.regNumber}</span>}
                 </th>
                 {days.map((d) => {

@@ -3,7 +3,7 @@ import { adminDb } from "@/lib/firebase/admin";
 import { getSettings, toDiscount } from "@/lib/data";
 import { inr } from "@/lib/format";
 import type { Discount, StaffMember } from "@/lib/types";
-import { addStaffMember, deleteDiscount, saveDiscount, saveSettings, setStaffActive } from "../../actions";
+import { addStaffMember, deleteDiscount, refreshSiteData, saveDiscount, saveSettings, setStaffActive } from "../../actions";
 import { Flash, PageTitle } from "../ui";
 
 export const metadata = { title: "Settings" };
@@ -29,13 +29,18 @@ export default async function SettingsAdmin(props: PageProps<"/admin/settings">)
 
   return (
     <div className="max-w-4xl space-y-6">
-      <PageTitle title="Settings" />
+      <PageTitle title="Settings">
+        <form action={refreshSiteData}>
+          <button type="submit" className="btn btn-sm btn-secondary" title="Use after changing data outside this admin panel">Refresh website data</button>
+        </form>
+      </PageTitle>
       <Flash sp={sp} />
 
       <form action={saveSettings} className="card grid gap-4 p-5 sm:grid-cols-2">
         <h2 className="text-lg font-bold sm:col-span-2">Prices and booking rules</h2>
         {input("depositAmount", "Refundable deposit ₹", s.depositAmount, { type: "number", help: "Shown as a separate line, not part of the total. 0 = no deposit." })}
         {input("fastagCharge", "FASTag charge ₹", s.fastagCharge, { type: "number", help: "Added to every booking. 0 = none." })}
+        {input("advanceDays", "Advance to confirm (days of rent)", s.advanceDays, { type: "number", step: "1", help: "1 = one day's rent, collected when staff call. 0 = no advance." })}
         {input("includedKmPerDay", "Default included km per day", s.includedKmPerDay, { type: "number" })}
         {input("holdHours", "Hold duration (hours)", s.holdHours, { type: "number", step: "0.5", help: "How long a new booking holds the car before staff confirm." })}
         {input("turnaroundHours", "Gap between bookings (hours)", s.turnaroundHours, { type: "number", step: "0.5", help: "Time kept free for cleaning between two bookings of the same car." })}
@@ -44,7 +49,11 @@ export default async function SettingsAdmin(props: PageProps<"/admin/settings">)
         <h2 className="mt-2 text-lg font-bold sm:col-span-2">Business details</h2>
         {input("businessName", "Business name", s.businessName)}
         {input("email", "Email", s.email, { type: "email" })}
-        <div className="sm:col-span-2">{input("address", "Address", s.address)}</div>
+        <div className="sm:col-span-2">{input("address", "Main office address", s.address)}</div>
+        <div className="sm:col-span-2">
+          <label htmlFor="branchAddresses" className="field-label">Branch offices (one address per line)</label>
+          <textarea id="branchAddresses" name="branchAddresses" defaultValue={s.branchAddresses.join("\n")} className="field" />
+        </div>
         <div>
           <label htmlFor="phones" className="field-label">Phone numbers (one per line)</label>
           <textarea id="phones" name="phones" defaultValue={s.phones.join("\n")} className="field" />

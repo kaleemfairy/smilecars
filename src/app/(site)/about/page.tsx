@@ -18,6 +18,15 @@ export default async function AboutPage() {
     "@type": "AutoRental",
     name: s.businessName,
     address: { "@type": "PostalAddress", streetAddress: s.address, addressLocality: "Chennai", addressRegion: "Tamil Nadu", addressCountry: "IN" },
+    ...(s.branchAddresses.length
+      ? {
+          department: s.branchAddresses.map((a) => ({
+            "@type": "AutoRental",
+            name: `${s.businessName} branch`,
+            address: { "@type": "PostalAddress", streetAddress: a, addressLocality: "Chennai", addressRegion: "Tamil Nadu", addressCountry: "IN" },
+          })),
+        }
+      : {}),
     telephone: s.phones[0],
     email: s.email,
     url: process.env.NEXT_PUBLIC_SITE_URL,
@@ -73,7 +82,10 @@ export default async function AboutPage() {
       <section id="contact" className="card mt-8 scroll-mt-20 p-5">
         <h2 className="text-lg font-bold">Contact us</h2>
         <ul className="mt-3 space-y-3 text-sm">
-          <li className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-600" aria-hidden />{s.address}</li>
+          <li className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-600" aria-hidden /><span><strong className="block">Main office</strong>{s.address}</span></li>
+          {s.branchAddresses.map((a) => (
+            <li key={a} className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-600" aria-hidden /><span><strong className="block">Branch</strong>{a}</span></li>
+          ))}
           {s.phones.map((p) => (
             <li key={p} className="flex gap-3"><Phone className="size-5 shrink-0 text-brand-600" aria-hidden /><a href={`tel:+${phoneDigits(p)}`} className="font-semibold hover:underline">{p}</a></li>
           ))}

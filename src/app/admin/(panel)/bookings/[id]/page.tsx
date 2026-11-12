@@ -4,12 +4,12 @@ import { ArrowLeft, Phone } from "lucide-react";
 import { requireStaff } from "@/lib/auth";
 import { getBooking } from "@/lib/bookings";
 import { NEXT_STATUSES } from "@/lib/availability-core";
-import { fmtDateTime, LABELS, phoneDigits } from "@/lib/format";
+import { fmtDateTime, inr, LABELS, phoneDigits } from "@/lib/format";
 import { requestTime } from "@/lib/time";
 import { StatusChip } from "@/components/booking/StatusChip";
 import { PriceTable } from "@/components/booking/PriceTable";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
-import { extendBookingHold, saveStaffNotes, setBookingStatus } from "../../../actions";
+import { extendBookingHold, saveStaffNotes, setAdvanceReceived, setBookingStatus } from "../../../actions";
 import { Flash } from "../../ui";
 
 export const metadata = { title: "Booking" };
@@ -85,6 +85,26 @@ export default async function BookingDetail(props: PageProps<"/admin/bookings/[i
         </div>
 
         <aside className="space-y-5">
+          {!!b.price.advance && b.status !== "cancelled" && (
+            <section className={`card p-5 ${b.advanceReceivedAt ? "" : "border-accent-400"}`}>
+              <h2 className="font-bold">Advance</h2>
+              <p className="mt-1 text-2xl font-extrabold">{inr(b.price.advance)}</p>
+              <p className="text-sm text-muted">Balance at delivery: {inr(b.price.balance ?? b.price.total - b.price.advance)}</p>
+              {b.advanceReceivedAt ? (
+                <p className="mt-2 text-sm font-semibold text-brand-700">Received · {fmtDateTime(b.advanceReceivedAt)}</p>
+              ) : (
+                <p className="mt-2 text-sm font-semibold text-red-700">Not received yet. Collect it before confirming.</p>
+              )}
+              <form action={setAdvanceReceived} className="mt-3">
+                <input type="hidden" name="id" value={b.id} />
+                <input type="hidden" name="received" value={b.advanceReceivedAt ? "false" : "true"} />
+                <button type="submit" className={`btn btn-sm w-full ${b.advanceReceivedAt ? "border border-line-strong" : "btn-teal"}`}>
+                  {b.advanceReceivedAt ? "Undo: not received" : "Mark advance received"}
+                </button>
+              </form>
+            </section>
+          )}
+
           <section className="card p-5">
             <h2 className="font-bold">Update status</h2>
             {next.length === 0 ? (

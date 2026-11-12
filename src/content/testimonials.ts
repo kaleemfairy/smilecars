@@ -28,9 +28,13 @@ export const TESTIMONIALS = [
 ];
 
 /** Trust points from the old site. Keep these in line with what the client can back up. */
+export const GOOGLE_RATING = { stars: "4.9", reviews: "3200+" };
+
 export const TRUST_POINTS = [
+  { value: `${GOOGLE_RATING.stars}★`, label: `${GOOGLE_RATING.reviews} Google reviews` },
   { value: "29+", label: "years in Chennai" },
   { value: "2,00,000+", label: "happy customers" },
+  { value: "200+", label: "cars in our fleet" },
   { value: "Logo-free", label: "cars, drive privately" },
   { value: "24/7", label: "customer support" },
 ];

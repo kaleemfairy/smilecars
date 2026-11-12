@@ -8,6 +8,7 @@ import { SearchForm } from "@/components/booking/SearchForm";
 import { FleetCard } from "@/components/cars/FleetCard";
 import { LOCATIONS } from "@/content/locations";
 import { Testimonials, TrustStrip } from "@/components/content/Trust";
+import { GOOGLE_RATING } from "@/content/testimonials";
 import { BODY_TYPES } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -31,7 +32,13 @@ export default async function HomePage() {
       <section className="bg-gradient-to-b from-brand-50 to-canvas">
         <div className="container-page grid gap-8 py-8 lg:grid-cols-[1fr_440px] lg:items-center lg:py-16">
           <div>
-            <p className="chip border-brand-100 bg-white text-brand-700">Serving Chennai for 29+ years</p>
+            <p className="flex flex-wrap items-center gap-2">
+              <span className="chip border-brand-100 bg-white text-brand-700">Serving Chennai for 29+ years</span>
+              <span className="chip border-accent-300 bg-white text-ink">
+                <span className="text-accent-500" aria-hidden>★★★★★</span>
+                {GOOGLE_RATING.stars} · {GOOGLE_RATING.reviews} Google reviews
+              </span>
+            </p>
             <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">
               Self drive cars in Chennai, <span className="text-brand-600">delivered to your door</span>
             </h1>
@@ -59,7 +66,13 @@ export default async function HomePage() {
           {[
             [CalendarCheck, "Search your dates", "Pick daily, weekly or monthly, your delivery hub and times."],
             [CarFront, "Choose a car", "Only cars free for your dates are shown, with the total price."],
-            [PhoneCall, "We call to confirm", `We hold the car for ${settings.holdHours} hours and call you to confirm. No online payment.`],
+            [
+              PhoneCall,
+              "We call to confirm",
+              settings.advanceDays > 0
+                ? `We hold the car for ${settings.holdHours} hours and call you. Pay ${settings.advanceDays === 1 ? "one day's" : `${settings.advanceDays} days'`} rent by GPay or PhonePe to confirm; the rest at delivery.`
+                : `We hold the car for ${settings.holdHours} hours and call you to confirm. No online payment.`,
+            ],
           ].map(([Icon, title, text], i) => {
             const I = Icon as typeof CalendarCheck;
             return (

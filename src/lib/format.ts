@@ -127,7 +127,7 @@ export function slugify(s: string): string {
 }
 
 export const LABELS = {
-  bodyType: { hatchback: "Hatchback", sedan: "Sedan", suv: "SUV", muv: "MUV / 7-seater", luxury: "Luxury" },
+  bodyType: { hatchback: "Hatchback", sedan: "Sedan", suv: "SUV", muv: "7–8 seater", luxury: "Premium SUV" },
   transmission: { manual: "Manual", automatic: "Automatic" },
   fuel: { petrol: "Petrol", diesel: "Diesel", cng: "CNG", electric: "Electric" },
   rentalType: { daily: "Daily", weekly: "Weekly", monthly: "Monthly" },

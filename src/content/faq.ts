@@ -32,7 +32,7 @@ export function getFaq(s: Settings): FaqItem[] {
     {
       category: "Booking",
       q: "Is my booking confirmed as soon as I submit it?",
-      a: `Submitting holds the car for you for ${s.holdHours} hours. Our team calls you on the number you gave to verify your details and confirm the booking. If we can't confirm within that time, the hold is released.`,
+      a: `Submitting holds the car for you for ${s.holdHours} hours. Our team calls you on the number you gave to verify your details${s.advanceDays > 0 ? ", and the booking is confirmed once the advance is paid" : " and confirm the booking"}. If it isn't confirmed within that time, the hold is released.`,
     },
     {
       category: "Booking",
@@ -70,7 +70,10 @@ export function getFaq(s: Settings): FaqItem[] {
     {
       category: "Payment & charges",
       q: "How do I pay?",
-      a: "No payment is taken on this website. We accept Google Pay, PhonePe and bank transfer; our team explains the payment steps when they call to confirm your booking.",
+      a:
+        s.advanceDays > 0
+          ? `No payment is taken on this website. To confirm your booking, pay ${s.advanceDays === 1 ? "one day's" : `${s.advanceDays} days'`} rent in advance by Google Pay, PhonePe or bank transfer when our team calls. The remaining rent is paid at the time of delivery.`
+          : "No payment is taken on this website. We accept Google Pay, PhonePe and bank transfer; our team explains the payment steps when they call to confirm your booking.",
     },
     {
       category: "Payment & charges",

@@ -27,7 +27,7 @@ export default async function CarsAdmin() {
                 <div className="min-w-0">
                   <p className="truncate font-bold">{c.name}</p>
                   <p className="text-xs text-muted">{LABELS.bodyType[c.bodyType]} · {LABELS.transmission[c.transmission]} · {LABELS.fuel[c.fuel]}{c.regNumber ? ` · ${c.regNumber}` : ""}</p>
-                  <p className="text-sm font-semibold">{inr(c.dailyRate)}/day</p>
+                  <p className="text-sm font-semibold">{inr(c.dailyRate)}/day · {c.units} car{c.units > 1 ? "s" : ""}</p>
                   {!c.active && <span className="text-xs font-bold text-red-700">Inactive (hidden from website)</span>}
                 </div>
               </Link>

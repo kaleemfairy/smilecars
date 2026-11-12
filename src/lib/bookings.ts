@@ -2,7 +2,7 @@ import "server-only";
 import type { DocumentData, DocumentSnapshot, Transaction } from "firebase-admin/firestore";
 import { adminDb } from "./firebase/admin";
 import { getActiveCars, getActiveHubs, getCarById, getDiscount, getSettings } from "./data";
-import { blocksCar, busyCarIds, NEXT_STATUSES, overlaps } from "./availability-core";
+import { busyCarIds, NEXT_STATUSES } from "./availability-core";
 import { quote } from "./pricing";
 import { HOUR_MS } from "./time";
 import type { ValidSearch } from "./search";
@@ -38,6 +38,7 @@ export function toBooking(doc: DocumentSnapshot<DocumentData>): Booking {
     updatedAt: d.updatedAt ?? 0,
     history: Array.isArray(d.history) ? d.history : [],
     deliveryReminderSent: d.deliveryReminderSent === true,
+    advanceReceivedAt: typeof d.advanceReceivedAt === "number" ? d.advanceReceivedAt : 0,
   };
 }
 
@@ -82,7 +83,8 @@ export async function findAvailableCars(search: ValidSearch): Promise<{
 
   const gap = settings.turnaroundHours;
   const { bookings, blocks } = await activeIntervals(search.startAt - gap * HOUR_MS);
-  const busy = busyCarIds(search.startAt, search.endAt, bookings, blocks, Date.now(), gap);
+  const unitsById = Object.fromEntries(cars.map((c) => [c.id, c.units]));
+  const busy = busyCarIds(search.startAt, search.endAt, bookings, blocks, Date.now(), gap, unitsById);
 
   const results = cars
     .filter((c) => !busy.has(c.id) && c.dailyRate > 0)
@@ -109,6 +111,7 @@ async function carIsFree(
   startAt: number,
   endAt: number,
   gapHours: number,
+  units: number,
   ignoreBookingId?: string,
 ): Promise<boolean> {
   const db = adminDb();
@@ -118,16 +121,9 @@ async function carIsFree(
     tx.get(db.collection(BLOCKS).where("carId", "==", carId).where("endAt", ">", from)),
   ]);
   const now = Date.now();
-  for (const doc of bSnap.docs) {
-    if (doc.id === ignoreBookingId) continue;
-    const b = toBooking(doc);
-    if (blocksCar(b, now) && overlaps(startAt, endAt, b.startAt, b.endAt, gapHours)) return false;
-  }
-  for (const doc of blSnap.docs) {
-    const bl = toBlock(doc);
-    if (overlaps(startAt, endAt, bl.startAt, bl.endAt, gapHours)) return false;
-  }
-  return true;
+  const bookings = bSnap.docs.filter((d) => d.id !== ignoreBookingId).map(toBooking);
+  const blocks = blSnap.docs.map(toBlock);
+  return !busyCarIds(startAt, endAt, bookings, blocks, now, gapHours, { [carId]: units }).has(carId);
 }
 
 export interface CreateBookingInput {
@@ -181,7 +177,7 @@ export async function createBooking(input: CreateBookingInput): Promise<CreateBo
 
   try {
     const ticket = await db.runTransaction(async (tx) => {
-      const free = await carIsFree(tx, car.id, search.startAt, search.endAt, settings.turnaroundHours);
+      const free = await carIsFree(tx, car.id, search.startAt, search.endAt, settings.turnaroundHours, car.units);
       const counter = await tx.get(counterRef);
       if (!free) throw new BookingConflictError();
       const next = ((counter.data()?.next as number | undefined) ?? 1);
@@ -211,6 +207,7 @@ export async function createBooking(input: CreateBookingInput): Promise<CreateBo
         updatedAt: now,
         history: [{ status: "new", at: now, by: "customer" }],
         deliveryReminderSent: false,
+        advanceReceivedAt: 0,
       });
       return ticketNo;
     });
@@ -278,7 +275,8 @@ export async function changeBookingStatus(
         throw new Error(`A ${b.status} booking cannot be marked ${next}.`);
       }
       if (next === "confirmed" && b.holdExpiresAt <= Date.now()) {
-        const free = await carIsFree(tx, b.carId, b.startAt, b.endAt, settings.turnaroundHours, b.id);
+        const units = (await getCarById(b.carId))?.units ?? 1;
+        const free = await carIsFree(tx, b.carId, b.startAt, b.endAt, settings.turnaroundHours, units, b.id);
         if (!free) throw new Error("The hold expired and this car has since been booked or blocked for these dates.");
       }
       const now = Date.now();
@@ -304,7 +302,8 @@ export async function extendHold(id: string, hours: number): Promise<void> {
     if (b.status !== "new") throw new Error("Only new bookings have a hold.");
     const settings = await getSettings();
     if (b.holdExpiresAt <= Date.now()) {
-      const free = await carIsFree(tx, b.carId, b.startAt, b.endAt, settings.turnaroundHours, b.id);
+      const units = (await getCarById(b.carId))?.units ?? 1;
+        const free = await carIsFree(tx, b.carId, b.startAt, b.endAt, settings.turnaroundHours, units, b.id);
       if (!free) throw new Error("The hold expired and this car has since been booked for these dates.");
     }
     const base = Math.max(Date.now(), b.holdExpiresAt);

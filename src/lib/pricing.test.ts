@@ -13,6 +13,7 @@ const car: Car = {
   transmission: "manual",
   fuel: "petrol",
   seats: 5,
+  units: 1,
   dailyRate: 1800,
   weeklyRate: 11000,
   monthlyRate: 36000,
@@ -29,6 +30,7 @@ const hub: Hub = { id: "h1", name: "Anna Nagar West", area: "", deliveryFee: 300
 const settings: Settings = {
   businessName: "Smile Cars",
   address: "",
+  branchAddresses: [],
   phones: [],
   emergencyPhone: "",
   whatsappNumber: "",
@@ -37,6 +39,7 @@ const settings: Settings = {
   notificationEmails: [],
   depositAmount: 3000,
   fastagCharge: 200,
+  advanceDays: 1,
   holdHours: 2,
   includedKmPerDay: 300,
   turnaroundHours: 0,
@@ -110,6 +113,38 @@ test("quote totals keep the deposit separate", () => {
   assert.equal(price.total, 3600 + 600 + 200);
   assert.equal(price.deposit, 3000);
   assert.equal(price.includedKm, 600);
+  assert.equal(price.advance, 1800); // one day's rent
+  assert.equal(price.balance, 3600 + 600 + 200 - 1800);
+  // advance never exceeds the total, and 0 days turns it off
+  const s2 = istToMs("2026-11-14", "10:00");
+  const cheap = quote({ car: { ...car, dailyRate: 1800 }, hub, settings: { ...settings, fastagCharge: 0, advanceDays: 3 }, rentalType: "daily", deliveryMode: "one-way", startAt: s2, endAt: s2 + 24 * HOUR_MS }).price;
+  assert.equal(cheap.advance, cheap.total);
+  const none = quote({ car, hub, settings: { ...settings, advanceDays: 0 }, rentalType: "daily", deliveryMode: "one-way", startAt: s2, endAt: s2 + 24 * HOUR_MS }).price;
+  assert.equal(none.advance, 0);
+});
+
+test("availability with several cars of one model", () => {
+  const now = istToMs("2026-11-12", "12:00");
+  const day = (d: number) => istToMs(`2026-11-${String(d).padStart(2, "0")}`, "10:00");
+  const bk = (s: number, e: number) => ({ carId: "swift", startAt: s, endAt: e, status: "confirmed" as const, holdExpiresAt: 0 });
+  // Two Swifts. Trips: 14-16 and 15-17 overlap -> both cars out on the 15th.
+  const bookings = [bk(day(14), day(16)), bk(day(15), day(17))];
+  const units = { swift: 2 };
+  assert.equal(busyCarIds(day(15), day(16), bookings, [], now, 0, units).has("swift"), true);
+  // 17th onwards: both back.
+  assert.equal(busyCarIds(day(17), day(18), bookings, [], now, 0, units).has("swift"), false);
+  // 13-14 (ends as the first trip starts): one car is free.
+  assert.equal(busyCarIds(day(13), day(14), bookings, [], now, 0, units).has("swift"), false);
+  // Trips 14-15 and 16-17 never overlap, so one car can serve both: 14-17 is still possible with 2 cars.
+  const apart = [bk(day(14), day(15)), bk(day(16), day(17))];
+  assert.equal(busyCarIds(day(14), day(17), apart, [], now, 0, units).has("swift"), false);
+  // ...but not with 1 car.
+  assert.equal(busyCarIds(day(14), day(17), apart, [], now, 0, { swift: 1 }).has("swift"), true);
+  // A servicing block takes one car.
+  assert.equal(
+    busyCarIds(day(15), day(16), [bk(day(15), day(16))], [{ carId: "swift", startAt: day(15), endAt: day(16) }], now, 0, units).has("swift"),
+    true,
+  );
 });
 
 test("availability: holds expire, cancelled bookings free the car", () => {

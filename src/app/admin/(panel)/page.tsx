@@ -4,10 +4,12 @@ import { listRecentBookings } from "@/lib/bookings";
 import { fmtDateTime, inr, LABELS } from "@/lib/format";
 import { istDayRange, requestTime, todayIst } from "@/lib/time";
 import { StatusChip } from "@/components/booking/StatusChip";
-import { BOOKING_STATUSES, type BookingStatus } from "@/lib/types";
+import { BOOKING_STATUSES, type Booking, type BookingStatus } from "@/lib/types";
 import { PageTitle } from "./ui";
 
 export const metadata = { title: "Bookings" };
+
+const needsAdvance = (b: Booking) => !!b.price.advance && !b.advanceReceivedAt && (b.status === "new" || b.status === "confirmed");
 
 function holdLabel(expiresAt: number, now: number) {
   const mins = Math.round((expiresAt - now) / 60000);
@@ -90,6 +92,7 @@ export default async function BookingsPage(props: PageProps<"/admin">) {
                     <p className="mt-1 font-semibold">{b.customerName} · {b.carName}</p>
                     <p className="text-sm text-muted">{fmtDateTime(b.startAt)} → {fmtDateTime(b.endAt)}</p>
                     {hold && <p className={`mt-1 text-sm font-semibold ${hold.urgent ? "text-red-700" : "text-brand-700"}`}>{hold.text}</p>}
+                    {needsAdvance(b) && <p className="text-sm font-semibold text-amber-700">Advance {inr(b.price.advance ?? 0)} pending</p>}
                   </Link>
                 </li>
               );
@@ -118,6 +121,7 @@ export default async function BookingsPage(props: PageProps<"/admin">) {
                       <td className="px-4 py-3">
                         <StatusChip status={b.status} />
                         {hold && <span className={`mt-1 block text-xs font-semibold ${hold.urgent ? "text-red-700" : "text-brand-700"}`}>{hold.text}</span>}
+                        {needsAdvance(b) && <span className="block text-xs font-semibold text-amber-700">Advance pending</span>}
                       </td>
                     </tr>
                   );

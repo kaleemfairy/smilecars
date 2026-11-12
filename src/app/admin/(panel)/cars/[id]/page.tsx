@@ -19,6 +19,7 @@ const EMPTY: Car = {
   transmission: "manual",
   fuel: "petrol",
   seats: 5,
+  units: 1,
   dailyRate: 0,
   weeklyRate: null,
   monthlyRate: null,
@@ -74,6 +75,7 @@ export default async function CarEdit(props: PageProps<"/admin/cars/[id]">) {
           <select id="fuel" name="fuel" defaultValue={car.fuel} className="field">{FUELS.map((v) => <option key={v} value={v}>{LABELS.fuel[v]}</option>)}</select>
         </div>
         {num("seats", "Seats", undefined, true)}
+        {num("units", "Number of cars of this model", "How many can be out at the same time. Each booking or block uses one.", true)}
         {num("dailyRate", "Daily rate ₹ (GST incl.)", undefined, true)}
         {num("weeklyRate", "Weekly rate ₹ (7 days)", "Leave blank to charge 7 × daily.")}
         {num("monthlyRate", "Monthly rate ₹ (30 days)", "Leave blank to hide from Monthly Plans.")}

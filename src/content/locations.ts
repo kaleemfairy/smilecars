@@ -50,6 +50,7 @@ export const LOCATIONS: Location[] = [
   {
     slug: "vadapalani",
     name: "Vadapalani",
+    hubId: "choolaimedu",
     intro:
       "Need a car near Vadapalani? We deliver to homes and offices around the temple, the Forum mall and Arcot Road, for a day, a week or a month.",
     nearby: ["Arcot Road", "Ashok Nagar", "K.K. Nagar", "Saligramam"],
@@ -57,6 +58,7 @@ export const LOCATIONS: Location[] = [
   {
     slug: "t-nagar",
     name: "T. Nagar",
+    hubId: "choolaimedu",
     intro:
       "Skip the parking-lot taxi queues in T. Nagar. Rent a self-drive car for shopping days, family functions or trips out of the city, delivered in T. Nagar.",
     nearby: ["Pondy Bazaar", "Panagal Park", "Mambalam", "Kodambakkam"],
@@ -64,6 +66,7 @@ export const LOCATIONS: Location[] = [
   {
     slug: "nungambakkam",
     name: "Nungambakkam",
+    hubId: "choolaimedu",
     intro:
       "Self-drive car rental for Nungambakkam and the city centre, ideal for business visitors and residents who want their own car without owning one.",
     nearby: ["Khader Nawaz Khan Road", "Sterling Road", "Valluvar Kottam", "Thousand Lights"],
@@ -71,6 +74,7 @@ export const LOCATIONS: Location[] = [
   {
     slug: "guindy",
     name: "Guindy",
+    hubId: "choolaimedu",
     intro:
       "Rent a car in Guindy for airport runs, office commutes in the industrial estate or a drive down GST Road, with delivery to your doorstep.",
     nearby: ["Guindy Industrial Estate", "Kathipara", "Ekkatuthangal", "Saidapet"],

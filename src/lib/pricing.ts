@@ -125,6 +125,9 @@ export function quote(input: QuoteInput): Quote {
   }
 
   const deliveryFee = hub.deliveryFee * (input.deliveryMode === "two-way" ? 2 : 1);
+  const total = rent - discount + deliveryFee + settings.fastagCharge;
+  // Advance to confirm: N days of the car's daily rent (N = settings.advanceDays), never more than the total.
+  const advance = Math.max(0, Math.min(total, Math.round(car.dailyRate * Math.max(0, settings.advanceDays))));
   const fastagCharge = settings.fastagCharge;
   const kmPerDay = car.includedKmPerDay ?? settings.includedKmPerDay;
 
@@ -138,8 +141,10 @@ export function quote(input: QuoteInput): Quote {
       discountCode,
       deliveryFee,
       fastagCharge,
-      total: rent - discount + deliveryFee + fastagCharge,
+      total,
       deposit: settings.depositAmount,
+      advance,
+      balance: total - advance,
       includedKm: kmPerDay * days,
       extraKmRate: car.extraKmRate,
     },

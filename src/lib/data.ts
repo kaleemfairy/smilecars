@@ -10,6 +10,7 @@ export const TAGS = { cars: "cars", hubs: "hubs", settings: "settings" } as cons
 export const DEFAULT_SETTINGS: Settings = {
   businessName: "Smile Cars®",
   address: "No.1076, 44th Street, TVS Colony, Anna Nagar West Extension, Chennai 600101",
+  branchAddresses: ["5/3 Annal Kamaraj Street, 100 Feet Road, Choolaimedu, Chennai 600094"],
   phones: ["+91 99620 97400", "+91 99620 56400", "+91 90925 55444", "+91 93314 29331"],
   emergencyPhone: "+91 44 4385 0256",
   whatsappNumber: "919962097400",
@@ -19,6 +20,7 @@ export const DEFAULT_SETTINGS: Settings = {
   notificationEmails: ["bookings@smilecars.net", "rentacarbooking@yahoo.com"],
   depositAmount: 0,
   fastagCharge: 0,
+  advanceDays: 1,
   holdHours: 2,
   includedKmPerDay: 300,
   turnaroundHours: 0,
@@ -39,6 +41,7 @@ export function toCar(doc: QueryDocumentSnapshot<DocumentData> | DocumentSnapsho
     transmission: d.transmission ?? "manual",
     fuel: d.fuel ?? "petrol",
     seats: num(d.seats, 5),
+    units: Math.max(1, Math.floor(num(d.units, 1))),
     dailyRate: num(d.dailyRate),
     weeklyRate: typeof d.weeklyRate === "number" && d.weeklyRate > 0 ? d.weeklyRate : null,
     monthlyRate: typeof d.monthlyRate === "number" && d.monthlyRate > 0 ? d.monthlyRate : null,
@@ -92,7 +95,7 @@ export const getAllCars = unstable_cache(
     return snap.docs.map(toCar).sort(byOrder);
   },
   ["all-cars"],
-  { tags: [TAGS.cars], revalidate: 3600 },
+  { tags: [TAGS.cars], revalidate: 300 },
 );
 
 export async function getActiveCars(): Promise<Car[]> {
@@ -113,7 +116,7 @@ export const getAllHubs = unstable_cache(
     return snap.docs.map(toHub).sort(byOrder);
   },
   ["all-hubs"],
-  { tags: [TAGS.hubs], revalidate: 3600 },
+  { tags: [TAGS.hubs], revalidate: 300 },
 );
 
 export async function getActiveHubs(): Promise<Hub[]> {
@@ -128,6 +131,7 @@ export const getSettings = unstable_cache(
     return {
       businessName: str(d.businessName, s.businessName) || s.businessName,
       address: str(d.address, s.address) || s.address,
+      branchAddresses: Array.isArray(d.branchAddresses) ? strArr(d.branchAddresses) : s.branchAddresses,
       phones: strArr(d.phones).length ? strArr(d.phones) : s.phones,
       emergencyPhone: typeof d.emergencyPhone === "string" ? d.emergencyPhone : s.emergencyPhone,
       whatsappNumber: str(d.whatsappNumber, s.whatsappNumber) || s.whatsappNumber,
@@ -136,6 +140,7 @@ export const getSettings = unstable_cache(
       notificationEmails: Array.isArray(d.notificationEmails) ? strArr(d.notificationEmails) : s.notificationEmails,
       depositAmount: num(d.depositAmount, s.depositAmount),
       fastagCharge: num(d.fastagCharge, s.fastagCharge),
+      advanceDays: num(d.advanceDays, s.advanceDays),
       holdHours: num(d.holdHours, s.holdHours) || s.holdHours,
       includedKmPerDay: num(d.includedKmPerDay, s.includedKmPerDay) || s.includedKmPerDay,
       turnaroundHours: num(d.turnaroundHours, s.turnaroundHours),
@@ -143,7 +148,7 @@ export const getSettings = unstable_cache(
     };
   },
   ["settings"],
-  { tags: [TAGS.settings], revalidate: 3600 },
+  { tags: [TAGS.settings], revalidate: 300 },
 );
 
 /**

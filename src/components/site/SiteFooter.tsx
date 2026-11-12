@@ -18,8 +18,20 @@ export function SiteFooter({ settings }: { settings: Settings }) {
           <ul className="mt-5 space-y-2 text-sm">
             <li className="flex gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden />
-              <span>{settings.address}</span>
+              <span>
+                <strong className="block text-white">Main office</strong>
+                {settings.address}
+              </span>
             </li>
+            {settings.branchAddresses.map((a) => (
+              <li key={a} className="flex gap-2">
+                <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden />
+                <span>
+                  <strong className="block text-white">Branch</strong>
+                  {a}
+                </span>
+              </li>
+            ))}
             {settings.phones.map((p) => (
               <li key={p} className="flex gap-2">
                 <Phone className="mt-0.5 size-4 shrink-0" aria-hidden />

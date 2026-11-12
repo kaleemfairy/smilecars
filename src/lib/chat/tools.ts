@@ -186,6 +186,8 @@ export async function runChatTool(name: string, input: unknown): Promise<string>
         delivery_fee: inr(p.deliveryFee),
         fastag_charge: inr(p.fastagCharge),
         total: inr(p.total),
+        advance_to_confirm: p.advance ? inr(p.advance) : null,
+        balance_at_delivery: p.advance ? inr(p.balance ?? p.total - p.advance) : null,
         refundable_deposit: inr(p.deposit),
         included_km: p.includedKm,
         extra_km_rate: `${inr(p.extraKmRate)}/km`,
@@ -240,6 +242,7 @@ export async function runChatTool(name: string, input: unknown): Promise<string>
       return JSON.stringify({
         business: s.businessName,
         address: s.address,
+        branch_offices: s.branchAddresses,
         phones: s.phones,
         whatsapp: `https://wa.me/${s.whatsappNumber.replace(/\D/g, "")}`,
         email: s.email,
@@ -250,6 +253,11 @@ export async function runChatTool(name: string, input: unknown): Promise<string>
         prices_include_gst: true,
         online_payment: false,
         how_booking_works: `Book on the website without logging in. The car is held for ${s.holdHours} hours and staff call to confirm. Track it at /my-orders.`,
+        advance_to_confirm:
+          s.advanceDays > 0
+            ? `${s.advanceDays} day(s) of the car's daily rent, paid by Google Pay, PhonePe or bank transfer when staff call; the balance is paid at delivery. The exact amount is shown as "advance" in get_price_quote.`
+            : "No advance; staff explain payment on the call.",
+        payment_methods: ["Google Pay", "PhonePe", "Bank transfer"],
       });
     }
     default:

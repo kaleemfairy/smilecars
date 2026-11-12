@@ -211,7 +211,12 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
         <p className="flex gap-2 rounded-xl border border-accent-300 bg-accent-300/30 p-3 text-sm">
           <Info className="mt-0.5 size-4 shrink-0" aria-hidden />
           <span>
-            No payment now. We hold this car for {holdHours} hours and our team will call you to confirm.
+            No payment now. We hold this car for {holdHours} hours and our team will call you.
+            {price.advance ? (
+              <> To confirm, pay an advance of <strong>{inr(price.advance)}</strong> by GPay, PhonePe or bank transfer; the balance is paid at delivery.</>
+            ) : (
+              <> They confirm the booking on that call.</>
+            )}
           </span>
         </p>
         {error && (

@@ -36,6 +36,8 @@ export interface Car {
   transmission: Transmission;
   fuel: Fuel;
   seats: number;
+  /** How many physical cars of this model the business has. Each booking or block uses one. */
+  units: number;
   /** Rent per day, GST included. */
   dailyRate: number;
   /** Rent for a full 7-day week, GST included. Optional. */
@@ -67,6 +69,8 @@ export interface Hub {
 export interface Settings {
   businessName: string;
   address: string;
+  /** Other offices / branches, one address each. */
+  branchAddresses: string[];
   phones: string[];
   /** 24/7 breakdown and emergency line, shown in the footer and FAQ. */
   emergencyPhone: string;
@@ -79,6 +83,8 @@ export interface Settings {
   notificationEmails: string[];
   depositAmount: number;
   fastagCharge: number;
+  /** Days of rent paid in advance to confirm a booking (0 = no advance). */
+  advanceDays: number;
   holdHours: number;
   includedKmPerDay: number;
   /** Gap kept free between two bookings of the same car, for cleaning. */
@@ -117,6 +123,10 @@ export interface PriceBreakdown {
   total: number;
   /** Refundable, shown separately and not part of total. */
   deposit: number;
+  /** Paid to confirm the booking (one day's rent by default). Part of total. Missing on older bookings. */
+  advance?: number;
+  /** total - advance, paid at delivery. */
+  balance?: number;
   includedKm: number;
   extraKmRate: number;
 }
@@ -152,6 +162,8 @@ export interface Booking {
   updatedAt: number;
   history: StatusEvent[];
   deliveryReminderSent: boolean;
+  /** When staff recorded the advance payment (0 = not yet). */
+  advanceReceivedAt: number;
 }
 
 export interface Block {

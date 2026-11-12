@@ -54,6 +54,26 @@ export async function extendBookingHold(form: FormData) {
   back(`/admin/bookings/${id}`, "ok", `Hold extended by ${hours} hours.`);
 }
 
+export async function setAdvanceReceived(form: FormData) {
+  const staff = await assertStaff();
+  const id = str(form, "id");
+  const received = str(form, "received") === "true";
+  const ref = adminDb().collection("bookings").doc(id);
+  await adminDb().runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    if (!snap.exists) throw new Error("Booking not found.");
+    const notes = String(snap.data()?.staffNotes ?? "");
+    const stamp = `${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} · ${staff.name || staff.email}`;
+    tx.update(ref, {
+      advanceReceivedAt: received ? Date.now() : 0,
+      staffNotes: `${notes}${notes ? "\n" : ""}[${stamp}] Advance ${received ? "received" : "marked as not received"}`.slice(-2000),
+      updatedAt: Date.now(),
+    });
+  });
+  revalidatePath("/admin");
+  back(`/admin/bookings/${id}`, "ok", received ? "Advance marked as received." : "Advance marked as not received.");
+}
+
 export async function saveStaffNotes(form: FormData) {
   await assertStaff();
   const id = str(form, "id");
@@ -136,6 +156,7 @@ export async function saveCar(form: FormData) {
     features: str(form, "features").split("\n").map((s) => s.trim()).filter(Boolean).slice(0, 20),
     regNumber: str(form, "regNumber").toUpperCase().slice(0, 20),
     sortOrder: numOrNull(form, "sortOrder") ?? 0,
+    units: Math.min(500, Math.max(1, Math.floor(numOrNull(form, "units") ?? 1))),
     active: form.get("active") === "on",
     updatedAt: Date.now(),
   };
@@ -260,6 +281,7 @@ export async function saveSettings(form: FormData) {
       {
         businessName: str(form, "businessName").slice(0, 80),
         address: str(form, "address").slice(0, 200),
+        branchAddresses: str(form, "branchAddresses").split(/\r?\n/).map((a) => a.trim()).filter(Boolean).slice(0, 5),
         phones: list(str(form, "phones")).slice(0, 6),
         emergencyPhone: str(form, "emergencyPhone").slice(0, 30),
         whatsappNumber: str(form, "whatsappNumber").replace(/\D/g, ""),
@@ -271,6 +293,7 @@ export async function saveSettings(form: FormData) {
           .slice(0, 10),
         depositAmount: numOrNull(form, "depositAmount") ?? 0,
         fastagCharge: numOrNull(form, "fastagCharge") ?? 0,
+        advanceDays: Math.min(30, Math.floor(numOrNull(form, "advanceDays") ?? 1)),
         holdHours,
         includedKmPerDay: numOrNull(form, "includedKmPerDay") ?? 300,
         turnaroundHours: numOrNull(form, "turnaroundHours") ?? 0,
@@ -281,6 +304,14 @@ export async function saveSettings(form: FormData) {
     );
   revalidateTag(TAGS.settings, expireNow);
   back("/admin/settings", "ok", "Settings saved.");
+}
+
+/** Clears cached cars, hubs and settings so the website shows database changes immediately. */
+export async function refreshSiteData() {
+  await assertStaff(["owner"]);
+  for (const tag of Object.values(TAGS)) revalidateTag(tag, expireNow);
+  revalidatePath("/", "layout");
+  back("/admin/settings", "ok", "Website data refreshed. Cars, hubs and settings now match the database.");
 }
 
 export async function saveDiscount(form: FormData) {

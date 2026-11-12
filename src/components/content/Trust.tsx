@@ -4,7 +4,7 @@ import { PARTNERS_LINE, TESTIMONIALS, TRUST_POINTS } from "@/content/testimonial
 export function TrustStrip() {
   return (
     <div>
-      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {TRUST_POINTS.map((t) => (
           <li key={t.label} className="card p-4 text-center">
             <p className="text-2xl font-extrabold text-brand-700">{t.value}</p>
