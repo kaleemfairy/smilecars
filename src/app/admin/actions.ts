@@ -161,16 +161,26 @@ export async function uploadCarPhoto(form: FormData) {
     back(`/admin/cars/${id}`, "error", "Use a JPG, PNG or WebP photo under 3.5 MB.");
   }
   const ext = photo.type === "image/png" ? "png" : photo.type === "image/webp" ? "webp" : "jpg";
-  const object = adminBucket().file(`cars/${id}/${Date.now()}.${ext}`);
-  await object.save(Buffer.from(await photo.arrayBuffer()), {
-    contentType: photo.type,
-    metadata: { cacheControl: "public, max-age=31536000, immutable" },
-  });
-  const url = await getDownloadURL(object);
+  let url: string;
+  try {
+    const object = adminBucket().file(`cars/${id}/${Date.now()}.${ext}`);
+    await object.save(Buffer.from(await photo.arrayBuffer()), {
+      contentType: photo.type,
+      metadata: { cacheControl: "public, max-age=31536000, immutable" },
+    });
+    url = await getDownloadURL(object);
+  } catch (err) {
+    console.error("photo upload failed", err);
+    back(
+      `/admin/cars/${id}`,
+      "error",
+      "Photo storage isn't set up yet. Turn on Firebase Storage (needs the Blaze plan) and set FIREBASE_STORAGE_BUCKET.",
+    );
+  }
   const ref = adminDb().collection("cars").doc(id);
   const snap = await ref.get();
   const photos: string[] = snap.data()?.photos ?? [];
-  await ref.update({ photos: [...photos, url], updatedAt: Date.now() });
+  await ref.update({ photos: [...photos, url!], updatedAt: Date.now() });
   revalidateTag(TAGS.cars, expireNow);
   back(`/admin/cars/${id}`, "ok", "Photo added.");
 }
