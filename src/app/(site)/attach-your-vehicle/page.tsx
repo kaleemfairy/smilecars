@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { BadgeIndianRupee, ShieldCheck, Wrench } from "lucide-react";
 import { EnquiryForm } from "./EnquiryForm";
 
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Attach your vehicle",
   description: "Own a car in Chennai? Attach it with Smile Cars and earn from it when you are not using it.",

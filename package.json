@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "seed": "node scripts/seed.mjs",
+    "create-owner": "node scripts/create-owner.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",
@@ -28,5 +32,8 @@
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }

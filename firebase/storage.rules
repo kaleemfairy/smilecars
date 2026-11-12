@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Car photos are uploaded by the server (Admin SDK) and served through download URLs.
+// No direct browser uploads or listing.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

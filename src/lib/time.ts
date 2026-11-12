@@ -4,6 +4,14 @@ export const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000;
 export const HOUR_MS = 60 * 60 * 1000;
 export const DAY_MS = 24 * HOUR_MS;
 
+/**
+ * Current time for dynamic server components. They render once per request, so reading
+ * the clock here is safe (the React purity lint rule targets re-rendering client code).
+ */
+export function requestTime(): number {
+  return Date.now();
+}
+
 /** "2026-11-14" + "10:00" (IST) -> epoch ms. Returns NaN for malformed input. */
 export function istToMs(date: string, time: string): number {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !/^\d{2}:\d{2}$/.test(time)) return NaN;

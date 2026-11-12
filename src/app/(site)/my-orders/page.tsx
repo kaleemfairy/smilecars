@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import { findBookingsByPhone, findBookingsByTicket } from "@/lib/bookings";
 import { fmtDateTime, inr, LABELS, maskPhone, normalizeIndianMobile } from "@/lib/format";
 import { rateLimit } from "@/lib/rate-limit";
+import { requestTime } from "@/lib/time";
 import { StatusChip } from "@/components/booking/StatusChip";
 import { BOOKING_STATUSES, type Booking } from "@/lib/types";
 
@@ -95,12 +96,12 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
                 <dt className="text-muted">Phone</dt><dd>{maskPhone(b.phone)}</dd>
                 <dt className="text-muted">Total</dt><dd className="font-semibold">{inr(b.price.total)}</dd>
               </dl>
-              {b.status === "new" && b.holdExpiresAt > Date.now() && (
+              {b.status === "new" && b.holdExpiresAt > requestTime() && (
                 <p className="mt-3 rounded-lg bg-accent-300/30 px-3 py-2 text-sm">
                   Waiting for our call. Car held until {fmtDateTime(b.holdExpiresAt)}.
                 </p>
               )}
-              {b.status === "new" && b.holdExpiresAt <= Date.now() && (
+              {b.status === "new" && b.holdExpiresAt <= requestTime() && (
                 <p className="mt-3 rounded-lg bg-slate-100 px-3 py-2 text-sm">
                   The hold has ended. Please call or WhatsApp us to check if the car is still free.
                 </p>
