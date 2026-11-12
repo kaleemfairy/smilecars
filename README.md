@@ -91,6 +91,15 @@ The site runs without Firebase (pages show empty states), but booking and admin 
 2. Add every variable from `.env.example` under Settings → Environment Variables. Set `NEXT_PUBLIC_SITE_URL` to the live URL.
 3. `vercel.json` runs functions in Mumbai (`bom1`) and schedules the delivery-day reminder at 07:00 IST.
    Set `CRON_SECRET` so only Vercel can call it.
+4. Add the Vercel domain (and any custom domain) under Firebase → Authentication → Settings → Authorized domains.
+
+Two Vercel details that are already handled in `package.json`, so don't remove them:
+
+- `engines.node` is `24.x` (Vercel otherwise picks the newest Node it offers).
+- `overrides` pins `jose` 5 under `jwks-rsa`. firebase-admin 14 otherwise loads `jose` 6, which is ES-module only,
+  through `require()`. Vercel's runtime rejects that (`ERR_REQUIRE_ESM`) and every Firestore page returns 500.
+
+Live: https://smilecars.vercel.app (project `smilecars` under kaleemfairy's Vercel account, Firebase project `smilecars-d0117`).
 
 ### 3. AI chat assistant
 
