@@ -1,8 +1,11 @@
 "use server";
 
 import { headers } from "next/headers";
+import { after } from "next/server";
 import { z } from "zod";
 import { adminDb } from "@/lib/firebase/admin";
+import { getSettings } from "@/lib/data";
+import { notifyEnquiry } from "@/lib/notifications";
 import { normalizeIndianMobile } from "@/lib/format";
 import { rateLimit } from "@/lib/rate-limit";
 
@@ -45,7 +48,9 @@ export async function submitEnquiry(_prev: EnquiryState, form: FormData): Promis
   if (!parsed.success || !phone) return { ok: false, message: "Please check the highlighted fields.", fieldErrors };
 
   try {
-    await adminDb().collection("enquiries").add({ ...parsed.data, phone, status: "new", createdAt: Date.now() });
+    const enquiry = { ...parsed.data, phone, createdAt: Date.now() };
+    await adminDb().collection("enquiries").add({ ...enquiry, status: "new" });
+    after(async () => notifyEnquiry(enquiry, await getSettings()).catch((e) => console.error("notifyEnquiry failed", e)));
   } catch (err) {
     console.error("enquiry save failed", err);
     return { ok: false, message: "Sorry, we couldn't save your enquiry. Please call or WhatsApp us." };

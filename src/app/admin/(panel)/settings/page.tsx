@@ -56,6 +56,11 @@ export default async function SettingsAdmin(props: PageProps<"/admin/settings">)
           <p className="mt-1 text-xs text-muted">With country code, one per line.</p>
         </div>
         {input("whatsappNumber", "WhatsApp click-to-chat number", s.whatsappNumber, { help: "With country code, e.g. 919962097400." })}
+        <div>
+          <label htmlFor="notificationEmails" className="field-label">New-booking email alerts to</label>
+          <textarea id="notificationEmails" name="notificationEmails" defaultValue={s.notificationEmails.join("\n")} className="field" />
+          <p className="mt-1 text-xs text-muted">One per line. Also receives vehicle-owner enquiries.</p>
+        </div>
         <button type="submit" className="btn btn-primary sm:col-span-2">Save settings</button>
       </form>
 

@@ -135,6 +135,21 @@ Parameters are filled in this order:
 
 Then set `WHATSAPP_TOKEN` (a permanent System User token), `WHATSAPP_PHONE_NUMBER_ID` and `WHATSAPP_ENABLED=true`.
 
+### 5. Email alerts, Zoho CRM, Google Analytics and Search Console
+
+These replace what the old smilecars.net did. Each is off until its env vars are set.
+
+| Feature | What it does | To switch on |
+|---|---|---|
+| Email alerts (`src/lib/email.ts`) | Emails every new booking (with an "Open in admin" button) and every vehicle-owner enquiry to the addresses in **Admin → Settings** (default: bookings@smilecars.net, rentacarbooking@yahoo.com) | Create a free Resend account, verify `smilecars.net` (adds DNS records at GoDaddy), set `RESEND_API_KEY`, `EMAIL_FROM` and `EMAIL_ENABLED=true` |
+| Zoho CRM (`src/lib/zoho.ts`) | Adds each booking's customer to Zoho as a lead, through the same Web-to-Lead form the old home page used | Set `ZOHO_ENABLED=true` (form tokens are in `.env.example`) |
+| Google Analytics 4 + Ads (`src/components/site/GoogleTags.tsx`) | Page views; `generate_lead` on each completed booking; `click_call` / `click_whatsapp` plus the old "Outbound click" Ads conversion on call and WhatsApp taps | Set the `NEXT_PUBLIC_GA_*` / `NEXT_PUBLIC_GOOGLE_ADS_*` vars. Tags load only on `NEXT_PUBLIC_TRACKING_HOSTS` (smilecars.net), so vercel.app and localhost traffic never reach the reports |
+| Search Console | `public/googled26e4fb58ad6bd30.html` keeps the existing domain verification when the domain moves to Vercel | Nothing |
+
+The old site's Ads tag fired the "Outbound click" conversion on every home page load; the new site fires it only on real
+call and WhatsApp taps, so expect conversion numbers to drop to their true level. For bookings, create a separate
+"Booking submitted" conversion in Google Ads and put its label in `NEXT_PUBLIC_GOOGLE_ADS_BOOKING_LABEL`.
+
 ## Scripts
 
 | Command | What it does |

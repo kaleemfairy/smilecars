@@ -33,6 +33,7 @@ const settings: Settings = {
   whatsappNumber: "",
   email: "",
   staffAlertNumbers: [],
+  notificationEmails: [],
   depositAmount: 3000,
   fastagCharge: 200,
   holdHours: 2,

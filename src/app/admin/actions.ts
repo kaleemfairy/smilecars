@@ -264,6 +264,10 @@ export async function saveSettings(form: FormData) {
         whatsappNumber: str(form, "whatsappNumber").replace(/\D/g, ""),
         email: str(form, "email").slice(0, 120),
         staffAlertNumbers: list(str(form, "staffAlertNumbers")).map((n) => n.replace(/\D/g, "")).filter((n) => n.length >= 10).slice(0, 10),
+        notificationEmails: list(str(form, "notificationEmails"))
+          .map((e) => e.toLowerCase())
+          .filter((e) => z.email().safeParse(e).success)
+          .slice(0, 10),
         depositAmount: numOrNull(form, "depositAmount") ?? 0,
         fastagCharge: numOrNull(form, "fastagCharge") ?? 0,
         holdHours,

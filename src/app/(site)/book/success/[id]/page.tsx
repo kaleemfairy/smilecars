@@ -7,6 +7,7 @@ import { getPublicSettings } from "@/lib/data";
 import { fmtDateTime, LABELS, maskPhone, phoneDigits } from "@/lib/format";
 import { PriceTable } from "@/components/booking/PriceTable";
 import { CopyButton } from "@/components/booking/CopyButton";
+import { TrackBooking } from "@/components/booking/TrackBooking";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const dynamic = "force-dynamic";
@@ -22,6 +23,7 @@ export default async function SuccessPage(props: PageProps<"/book/success/[id]">
 
   return (
     <div className="container-page max-w-2xl py-8">
+      <TrackBooking ticket={booking.ticket} total={booking.price.total} carName={booking.carName} />
       <div className="card p-6 text-center">
         <CheckCircle2 className="mx-auto size-14 text-brand-600" aria-hidden />
         <h1 className="mt-3 text-2xl font-extrabold">Booking received!</h1>

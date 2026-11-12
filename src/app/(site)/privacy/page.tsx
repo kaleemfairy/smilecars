@@ -30,8 +30,15 @@ export default async function PrivacyPage() {
         <h2>Who we share it with</h2>
         <p>
           We use trusted service providers to run this website: Google Firebase (data storage), Vercel (hosting), Meta
-          WhatsApp Business (messages) and Anthropic (the AI chat assistant, which processes the messages you type in the chat).
-          They process data only to provide these services to us.
+          WhatsApp Business (messages), Resend (booking emails to our team), Zoho CRM (our customer records) and Anthropic
+          (the AI chat assistant, which processes the messages you type in the chat). They process data only to provide
+          these services to us.
+        </p>
+        <h2>Analytics and advertising</h2>
+        <p>
+          We use Google Analytics and Google Ads to understand how visitors use the site and whether our ads work, for
+          example when someone completes a booking or taps our call or WhatsApp buttons. Google may use cookies for this.
+          You can block or delete cookies in your browser settings.
         </p>
         <h2>How long we keep it</h2>
         <p>We keep booking records for as long as needed for our business, accounting and legal requirements.</p>

@@ -73,6 +73,8 @@ export interface Settings {
   email: string;
   /** Numbers (with country code) that receive new-booking alerts. */
   staffAlertNumbers: string[];
+  /** Email addresses that receive new-booking and enquiry alerts. */
+  notificationEmails: string[];
   depositAmount: number;
   fastagCharge: number;
   holdHours: number;

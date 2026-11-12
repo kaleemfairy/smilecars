@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { FloatingContact } from "@/components/site/FloatingContact";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { GoogleTags } from "@/components/site/GoogleTags";
 
 export default async function SiteLayout({ children }: { children: React.ReactNode }) {
   const settings = await getPublicSettings();
@@ -16,6 +17,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       <SiteFooter settings={settings} />
       <FloatingContact settings={settings} />
       {process.env.NEXT_PUBLIC_CHAT_ENABLED !== "false" && <ChatWidget />}
+      <GoogleTags />
     </>
   );
 }

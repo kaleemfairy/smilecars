@@ -14,6 +14,8 @@ export const DEFAULT_SETTINGS: Settings = {
   whatsappNumber: "919962097400",
   email: "bookings@smilecars.net",
   staffAlertNumbers: [],
+  // Same inboxes the old site's booking and contact forms emailed.
+  notificationEmails: ["bookings@smilecars.net", "rentacarbooking@yahoo.com"],
   depositAmount: 0,
   fastagCharge: 0,
   holdHours: 2,
@@ -129,6 +131,7 @@ export const getSettings = unstable_cache(
       whatsappNumber: str(d.whatsappNumber, s.whatsappNumber) || s.whatsappNumber,
       email: str(d.email, s.email) || s.email,
       staffAlertNumbers: strArr(d.staffAlertNumbers),
+      notificationEmails: Array.isArray(d.notificationEmails) ? strArr(d.notificationEmails) : s.notificationEmails,
       depositAmount: num(d.depositAmount, s.depositAmount),
       fastagCharge: num(d.fastagCharge, s.fastagCharge),
       holdHours: num(d.holdHours, s.holdHours) || s.holdHours,
