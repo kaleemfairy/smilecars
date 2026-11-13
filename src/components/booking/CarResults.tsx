@@ -180,7 +180,7 @@ export function CarResults({
               <p className="text-xs text-muted">
                 {price.includedKm.toLocaleString("en-IN")} km included · extra {inr(car.extraKmRate)}/km
               </p>
-              <div className="mt-auto flex items-end justify-between gap-3 border-t border-line pt-3">
+              <div className="mt-auto flex items-end justify-between gap-3 rounded-xl bg-brand-50 p-3">
                 <div>
                   <p className="text-sm text-muted">{inr(car.dailyRate)}/day</p>
                   <p className="text-2xl font-extrabold tabular-nums">{inr(price.total)}</p>

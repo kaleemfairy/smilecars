@@ -57,7 +57,7 @@ export default async function BookingsPage(props: PageProps<"/admin">) {
           ["Returns due today", counts.returns, "/admin?status=delivered"],
         ].map(([label, n, href]) => (
           <li key={label as string}>
-            <Link href={href as string} className="card block p-4 hover:shadow-raised">
+            <Link href={href as string} className="card block p-4 transition-colors hover:bg-brand-50">
               <p className="text-3xl font-extrabold">{n as number}</p>
               <p className="text-sm text-muted">{label as string}</p>
             </Link>

@@ -111,7 +111,7 @@ export function ChatWidget() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed bottom-4 left-4 z-40 flex h-14 items-center gap-2 rounded-full bg-white pl-2 pr-4 font-semibold text-brand-700 shadow-lg ring-1 ring-line hover:shadow-raised print:hidden"
+          className="fixed bottom-4 left-4 z-40 flex h-14 items-center gap-2 rounded-full border-2 border-brand-200 bg-white pl-2 pr-4 font-semibold text-brand-700 hover:bg-brand-50 print:hidden"
           aria-label="Open chat assistant"
         >
           <span className="flex size-10 items-center justify-center rounded-full bg-brand-600 text-white">

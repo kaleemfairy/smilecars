@@ -22,7 +22,7 @@ export default async function CarsAdmin() {
         <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {cars.map((c) => (
             <li key={c.id}>
-              <Link href={`/admin/cars/${c.id}`} className="card flex gap-3 p-3 hover:shadow-raised">
+              <Link href={`/admin/cars/${c.id}`} className="card flex gap-3 p-3 transition-colors hover:bg-brand-50">
                 <CarImage car={c} className="h-16 w-24 shrink-0 rounded-lg" />
                 <div className="min-w-0">
                   <p className="truncate font-bold">{c.name}</p>

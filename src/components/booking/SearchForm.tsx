@@ -51,12 +51,12 @@ export function SearchForm({ hubs, defaults, minDate, submitLabel = "Find availa
 
   return (
     <form action="/book" method="get" className="space-y-4">
-      <div role="radiogroup" aria-label="Rental type" className="grid grid-cols-3 gap-1 rounded-xl bg-brand-50 p-1">
+      <div role="radiogroup" aria-label="Rental type" className="grid grid-cols-3 gap-1 rounded-full bg-white p-1">
         {(["daily", "weekly", "monthly"] as const).map((t) => (
           <label
             key={t}
-            className={`flex min-h-11 cursor-pointer items-center justify-center rounded-lg text-sm font-semibold transition-colors ${
-              type === t ? "bg-white text-brand-700 shadow-sm" : "text-muted"
+            className={`flex min-h-11 cursor-pointer items-center justify-center rounded-full text-[0.9375rem] font-bold transition-colors has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand-600 ${
+              type === t ? "bg-brand-600 text-white" : "text-ink hover:bg-brand-100"
             }`}
           >
             <input
@@ -99,8 +99,8 @@ export function SearchForm({ hubs, defaults, minDate, submitLabel = "Find availa
           ).map(([value, text]) => (
             <label
               key={value}
-              className={`flex min-h-12 cursor-pointer items-center justify-center rounded-xl border px-2 text-center text-sm font-semibold ${
-                mode === value ? "border-brand-600 bg-brand-600 text-white" : "border-line-strong bg-white"
+              className={`flex min-h-12 cursor-pointer items-center justify-center rounded-full px-2 text-center text-[0.9375rem] font-bold transition-colors has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand-600 ${
+                mode === value ? "bg-brand-600 text-white" : "bg-white text-ink hover:bg-brand-100"
               }`}
             >
               <input
@@ -169,7 +169,7 @@ export function SearchForm({ hubs, defaults, minDate, submitLabel = "Find availa
         <Search className="size-5" aria-hidden />
         {submitLabel}
       </button>
-      <p className="text-center text-xs text-muted">Prices include GST · No online payment · We call to confirm</p>
+      <p className="text-center text-sm text-muted">Prices include GST · No online payment · We call to confirm</p>
     </form>
   );
 }

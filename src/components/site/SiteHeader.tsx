@@ -16,7 +16,7 @@ export const NAV = [
 export function SiteHeader({ settings }: { settings: Settings }) {
   const phone = settings.phones[0];
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur-md">
+    <header className="sticky top-0 z-40 bg-white">
       <div className="container-page flex h-16 items-center justify-between gap-3">
         <Link href="/" aria-label="Smile Cars home" className="shrink-0">
           <Logo className="h-10 w-auto sm:h-11" />
@@ -27,7 +27,7 @@ export function SiteHeader({ settings }: { settings: Settings }) {
             <Link
               key={n.href}
               href={n.href}
-              className="rounded-lg px-3 py-2 text-sm font-semibold text-ink hover:bg-brand-50 hover:text-brand-700"
+              className="rounded-full px-3 py-2 text-[0.9375rem] font-semibold text-ink transition-colors hover:bg-brand-100 hover:text-brand-900"
             >
               {n.label}
             </Link>
@@ -52,20 +52,20 @@ export function SiteHeader({ settings }: { settings: Settings }) {
           {/* details/summary keeps the phone menu working without JavaScript */}
           <details className="group relative lg:hidden">
             <summary
-              className="flex size-11 cursor-pointer list-none items-center justify-center rounded-xl border border-line bg-white [&::-webkit-details-marker]:hidden"
+              className="flex size-11 cursor-pointer list-none items-center justify-center rounded-full bg-brand-100 [&::-webkit-details-marker]:hidden"
               aria-label="Menu"
             >
               <Menu className="size-5" aria-hidden />
             </summary>
             <nav
               aria-label="Mobile"
-              className="card absolute right-0 top-13 w-60 p-2"
+              className="absolute right-0 top-13 w-64 rounded-2xl bg-brand-100 p-2"
             >
-              <Link href="/book" className="block rounded-lg px-3 py-3 font-semibold text-brand-700 hover:bg-brand-50">
+              <Link href="/book" className="block rounded-xl px-3 py-3 font-bold text-brand-900 hover:bg-white">
                 Book a car
               </Link>
               {NAV.map((n) => (
-                <Link key={n.href} href={n.href} className="block rounded-lg px-3 py-3 font-medium hover:bg-brand-50">
+                <Link key={n.href} href={n.href} className="block rounded-xl px-3 py-3 font-semibold hover:bg-white">
                   {n.label}
                 </Link>
               ))}

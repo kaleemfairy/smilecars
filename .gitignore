@@ -43,3 +43,6 @@ next-env.d.ts
 
 # local-only notes
 *.local
+
+# design inspection output
+.taste-skill/
