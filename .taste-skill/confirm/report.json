@@ -1,0 +1,1200 @@
+{
+ "url": "http://127.0.0.1:3000/book/confirm?type=daily&hub=anna-nagar-west&mode=two-way&pd=2026-11-23&pt=10:00&rd=2026-11-25&rt=10:00&car=maruti-swift-manual",
+ "at": "2026-11-13T02:17:56.749Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.46,
+    0.8,
+    0.81
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1955,
+     "screens": 2.2,
+     "words": 326,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "chars": 20,
+     "lines": 1,
+     "size": 24,
+     "vw": 1.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1.33,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.48,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "lines": 1,
+     "size": 24,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      24
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 15,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.2
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 24,
+      "vw": 1.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Confirm your booking"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0e3e34",
+       "top": 1266,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.44
+      },
+      {
+       "color": "#16211f",
+       "share": 0.36
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.14
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.03
+      },
+      {
+       "color": "#0e3e34",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#e2f4ee",
+      "hsl": {
+       "h": 160,
+       "s": 0.45,
+       "l": 0.92
+      },
+      "fg": "#0e3e34"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Apply"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "div.flex.items-start 280px",
+      "div.flex.items-start 280px",
+      "div.flex.items-center 280px",
+      "div.flex.items-start 280px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1955,
+    "margins": {
+     "left": 172,
+     "right": 292
+    },
+    "sections": [
+     {
+      "sel": "main#main",
+      "tag": "main",
+      "top": 64,
+      "height": 1138,
+      "words": 153,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Confirm your booking",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 376,
+      "right": 376,
+      "textLeft": 376,
+      "textRight": 391,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 1266,
+      "height": 689,
+      "words": 115,
+      "media": 0,
+      "middle": 156,
+      "heading": {
+       "text": "Quick links",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 292,
+      "textLeft": 160,
+      "textRight": 292,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Confirm your booking",
+      "size": 24,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 376,
+      "n": 1
+     },
+     {
+      "x": 396,
+      "n": 1
+     },
+     {
+      "x": 764,
+      "n": 1
+     },
+     {
+      "x": 781,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.22,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 360,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.83,
+    0.94
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2001,
+     "screens": 2,
+     "words": 315,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "chars": 20,
+     "lines": 1,
+     "size": 24,
+     "vw": 3.1,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1.33,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "lines": 1,
+     "size": 24,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      24
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 15,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.2
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 24,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "text": "Confirm your booking"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 392,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0e3e34",
+       "top": 1266,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.43
+      },
+      {
+       "color": "#16211f",
+       "share": 0.36
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.14
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.03
+      },
+      {
+       "color": "#0e3e34",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e2f4ee",
+      "hsl": {
+       "h": 160,
+       "s": 0.45,
+       "l": 0.92
+      },
+      "fg": "#0e3e34"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Apply"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "div.flex.items-start 280px",
+      "div.flex.items-start 280px",
+      "div.flex.items-center 280px",
+      "div.flex.items-start 280px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2001,
+    "margins": {
+     "left": 16,
+     "right": 36
+    },
+    "sections": [
+     {
+      "sel": "main#main",
+      "tag": "main",
+      "top": 64,
+      "height": 1138,
+      "words": 153,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Confirm your booking",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 1266,
+      "height": 735,
+      "words": 115,
+      "media": 0,
+      "middle": 60,
+      "heading": {
+       "text": "Quick links",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 52,
+      "textLeft": 16,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Confirm your booking",
+      "size": 24,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 1
+     },
+     {
+      "x": 36,
+      "n": 1
+     },
+     {
+      "x": 452,
+      "n": 1
+     },
+     {
+      "x": 469,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.75,
+    0.88,
+    0.71,
+    0.99,
+    0.99
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3434,
+     "screens": 4.1,
+     "words": 314,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "chars": 20,
+     "lines": 1,
+     "size": 24,
+     "vw": 6.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1.33,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Confirm your booking",
+     "words": 3,
+     "lines": 1,
+     "size": 24,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Confirm your booking",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      24
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 15,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.2
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Confirm your booking"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 486,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0e3e34",
+       "top": 2146,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.43
+      },
+      {
+       "color": "#16211f",
+       "share": 0.36
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.14
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.03
+      },
+      {
+       "color": "#0e3e34",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#e2f4ee",
+      "hsl": {
+       "h": 160,
+       "s": 0.45,
+       "l": 0.92
+      },
+      "fg": "#0e3e34"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call",
+      "Submit booking"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "div.flex.items-start 326px",
+      "div.flex.items-start 326px",
+      "div.flex.items-center 326px",
+      "div.flex.items-start 326px",
+      "div.fixed.inset-x-0 390px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3434,
+    "margins": {
+     "left": 16,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "main#main",
+      "tag": "main",
+      "top": 64,
+      "height": 2018,
+      "words": 151,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Confirm your booking",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 32,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 2146,
+      "height": 1287,
+      "words": 115,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 23,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Confirm your booking",
+      "size": 24,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "₹4,400",
+      "side": "left",
+      "px": 12
+     }
+    ],
+    "edges": [
+     {
+      "x": 32,
+      "n": 2
+     },
+     {
+      "x": 16,
+      "n": 1
+     },
+     {
+      "x": 53,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "4 thin rule(s)/divider line(s): div.flex.items-start 280px | div.flex.items-start 280px | div.flex.items-center 280px | div.flex.items-start 280px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 24px (1.7vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt Rokkitt and Literata, but the page renders Plus Jakarta Sans.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The page sits off-centre: its content comes to 172px from the left edge but only to 292px from the right, at 1440px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure)."
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 1440,
+   "message": "The h1 is 24px (\"Confirm your booking\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 1440,
+   "message": "The h1 is a bare name (\"Confirm your booking\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 16px on the left, 36px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "edge-text",
+   "width": 390,
+   "message": "1 text block(s) sit 12–15px from the phone's edge: \"₹4,400\" (12px)",
+   "fix": "The page margin is 16–20px on a phone; the header and the corner labels sit on it too."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\desktop-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\tablet-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\mobile-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\confirm\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

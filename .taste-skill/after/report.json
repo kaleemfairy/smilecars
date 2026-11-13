@@ -1,0 +1,2693 @@
+{
+ "url": "http://127.0.0.1:3000/",
+ "at": "2026-11-13T02:18:15.403Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    1,
+    0.8,
+    0.91,
+    0.91,
+    0.91,
+    0.47,
+    0.82,
+    0.45,
+    0.89,
+    0.84
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 28,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 8473,
+     "screens": 9.4,
+     "words": 885,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-fronx.webp",
+      "hero-crysta.webp",
+      "hero-hycross.webp",
+      "hero-brezza.webp",
+      "fleet-hatchback.webp",
+      "fleet-sedan.webp",
+      "fleet-suv.webp",
+      "fleet-seven.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "chars": 29,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.03,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.35,
+     "top": 124,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "lines": 2,
+     "size": 72,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars, at your door",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.03,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 124,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From search to your doorstep",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1377,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Our fleet",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 95,
+      "vw": 6.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2093,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hatchbacks from ₹1,500 a day",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 2121,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sedans from ₹2,200 a day",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 2703,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Compact SUVs from ₹2,500 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 3148,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "7 and 8 seaters from ₹3,000 a day",
+      "words": 8,
+      "chars": 33,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 3730,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Premium SUVs from ₹3,000 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 4208,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "29",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 5029,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "2 lakh+",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 5126,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "200+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 5223,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 5320,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "24/7",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 5391,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "Booked a car from Smile cars on online from UK.",
+      "words": 10,
+      "chars": 47,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 5839,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Delivered across Chennai",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 6535,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A car for the whole month",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 49,
+      "vw": 3.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 7339,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      28,
+      32,
+      36,
+      48,
+      49,
+      72,
+      95
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.5
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 95,
+      "vw": 6.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Our fleet"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0e3e34",
+       "top": 76,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 76,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#27ae90",
+       "top": 1981,
+       "hsl": {
+        "h": 167,
+        "s": 0.63,
+        "l": 0.42
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#16211f",
+       "share": 0.37
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#0b2620",
+       "share": 0.24
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.07
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#1c7d67",
+      "hsl": {
+       "h": 166,
+       "s": 0.63,
+       "l": 0.3
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Ask us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 16,
+     "squareMedia": 7,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.44
+     },
+     {
+      "type": "img",
+      "ratio": 0.44
+     },
+     {
+      "type": "img",
+      "ratio": 0.44
+     },
+     {
+      "type": "img",
+      "ratio": 0.44
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 8473,
+    "margins": {
+     "left": 160,
+     "right": 156
+    },
+    "sections": [
+     {
+      "sel": "section.px-3.pt-3",
+      "tag": "section",
+      "top": 64,
+      "height": 1045,
+      "words": 81,
+      "media": 2,
+      "middle": 77,
+      "heading": {
+       "text": "Self drive cars, at your door",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 160,
+      "right": 12,
+      "textLeft": 160,
+      "textRight": 791,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.mt-24.bg-brand-900",
+      "tag": "section",
+      "top": 1237,
+      "height": 744,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-brand-500.py-20",
+      "tag": "section",
+      "top": 1981,
+      "height": 2804,
+      "words": 17,
+      "media": 0,
+      "middle": 118,
+      "heading": {
+       "text": "Our fleet",
+       "size": 95,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 504,
+      "textLeft": 160,
+      "textRight": 504,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 4785,
+      "height": 883,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-white.py-24",
+      "tag": "section",
+      "top": 5667,
+      "height": 712,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 544,
+      "right": 524,
+      "textLeft": 544,
+      "textRight": 524,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 6379,
+      "height": 532,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 6910,
+      "height": 810,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A car for the whole month",
+       "size": 49,
+       "tag": "h2"
+      },
+      "left": 776,
+      "right": 156,
+      "textLeft": 776,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 7784,
+      "height": 689,
+      "words": 115,
+      "media": 0,
+      "middle": 156,
+      "heading": {
+       "text": "Quick links",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 292,
+      "textLeft": 160,
+      "textRight": 292,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars, at your door",
+      "size": 72,
+      "top": 124,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 160,
+      "n": 3
+     },
+     {
+      "x": 776,
+      "n": 2
+     },
+     {
+      "x": 184,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.06,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 120,
+     "h": 660
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    1,
+    0.87,
+    0.94,
+    0.87,
+    0.81,
+    0.39,
+    0.81,
+    0.71,
+    0.94,
+    0.94
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 28,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 9365,
+     "screens": 9.1,
+     "words": 866,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-fronx.webp",
+      "hero-crysta.webp",
+      "hero-hycross.webp",
+      "hero-brezza.webp",
+      "fleet-hatchback.webp",
+      "fleet-sedan.webp",
+      "fleet-suv.webp",
+      "fleet-seven.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "chars": 29,
+     "lines": 2,
+     "size": 60,
+     "vw": 7.8,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.03,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.82,
+     "top": 572,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "lines": 2,
+     "size": 60,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars, at your door",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.03,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 572,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From search to your doorstep",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1720,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Our fleet",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2557,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hatchbacks from ₹1,500 a day",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2694,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sedans from ₹2,200 a day",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3237,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Compact SUVs from ₹2,500 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3641,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "7 and 8 seaters from ₹3,000 a day",
+      "words": 8,
+      "chars": 33,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4184,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Premium SUVs from ₹3,000 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4622,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "29",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 5322,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "2 lakh+",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 5419,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "200+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 5517,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 5587,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "24/7",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 5658,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "Booked a car from Smile cars on online from UK.",
+      "words": 10,
+      "chars": 47,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 6534,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Delivered across Chennai",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7150,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A car for the whole month",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 8333,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      28,
+      32,
+      36,
+      48,
+      60,
+      69
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.5
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 69.1,
+      "vw": 9,
+      "font": "Plus Jakarta Sans",
+      "text": "Our fleet"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0e3e34",
+       "top": 76,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 544,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f2faf7",
+       "top": 872,
+       "hsl": {
+        "h": 158,
+        "s": 0.44,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#27ae90",
+       "top": 2465,
+       "hsl": {
+        "h": 167,
+        "s": 0.63,
+        "l": 0.42
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#16211f",
+       "share": 0.38
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#0b2620",
+       "share": 0.23
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.07
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#1c7d67",
+      "hsl": {
+       "h": 166,
+       "s": 0.63,
+       "l": 0.3
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Ask us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 7,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 9365,
+    "margins": {
+     "left": 16,
+     "right": 52
+    },
+    "sections": [
+     {
+      "sel": "section.px-3.pt-3",
+      "tag": "section",
+      "top": 64,
+      "height": 1452,
+      "words": 81,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Self drive cars, at your door",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 12,
+      "right": 12,
+      "textLeft": 44,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-24.bg-brand-900",
+      "tag": "section",
+      "top": 1612,
+      "height": 853,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-brand-500.py-20",
+      "tag": "section",
+      "top": 2465,
+      "height": 2661,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Our fleet",
+       "size": 69,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 456,
+      "textLeft": 16,
+      "textRight": 456,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 5126,
+      "height": 1220,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-white.py-24",
+      "tag": "section",
+      "top": 6346,
+      "height": 680,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 380,
+      "textLeft": 16,
+      "textRight": 380,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 7026,
+      "height": 543,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 7568,
+      "height": 998,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 244,
+      "textLeft": 16,
+      "textRight": 244,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 8631,
+      "height": 735,
+      "words": 115,
+      "media": 0,
+      "middle": 60,
+      "heading": {
+       "text": "Quick links",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 52,
+      "textLeft": 16,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars, at your door",
+      "size": 60,
+      "top": 572,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 3
+     },
+     {
+      "x": 44,
+      "n": 2
+     },
+     {
+      "x": 68,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.91,
+    0.87,
+    0.99,
+    0.89,
+    0.91,
+    0.84,
+    0.83,
+    0.76,
+    0.49,
+    0.87,
+    0.55,
+    0.94
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 28,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 11398,
+     "screens": 13.5,
+     "words": 860,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-fronx.webp",
+      "hero-crysta.webp",
+      "hero-hycross.webp",
+      "hero-brezza.webp",
+      "fleet-hatchback.webp",
+      "fleet-sedan.webp",
+      "fleet-suv.webp",
+      "fleet-seven.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "chars": 29,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.03,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.84,
+     "top": 485,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars, at your door",
+     "words": 6,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars, at your door",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.03,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 485,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From search to your doorstep",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1650,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Our fleet",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2639,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hatchbacks from ₹1,500 a day",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2744,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sedans from ₹2,200 a day",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3610,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Compact SUVs from ₹2,500 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4141,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "7 and 8 seaters from ₹3,000 a day",
+      "words": 8,
+      "chars": 33,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5007,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Premium SUVs from ₹3,000 a day",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5769,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Chennai drives with us",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6689,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "29",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 6793,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "2 lakh+",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 6910,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "200+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 7027,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 7144,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "24/7",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 7233,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "From a customer",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7879,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Booked a car from Smile cars on online from UK.",
+      "words": 10,
+      "chars": 47,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7943,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Delivered across Chennai",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8630,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A car for the whole month",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9784,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      28,
+      30,
+      35,
+      36,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.5
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "text": "Self drive cars, at your door"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f6f5",
+     "bodyBgHsl": {
+      "h": 160,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0e3e34",
+       "top": 76,
+       "hsl": {
+        "h": 168,
+        "s": 0.63,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 457,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f2faf7",
+       "top": 797,
+       "hsl": {
+        "h": 158,
+        "s": 0.44,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#27ae90",
+       "top": 2547,
+       "hsl": {
+        "h": 167,
+        "s": 0.63,
+        "l": 0.42
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#16211f",
+       "share": 0.38
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#0b2620",
+       "share": 0.23
+      },
+      {
+       "color": "#155c4c",
+       "share": 0.07
+      },
+      {
+       "color": "#4a5a57",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0e3e34"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 7,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.45
+     },
+     {
+      "type": "img",
+      "ratio": 0.45
+     },
+     {
+      "type": "img",
+      "ratio": 0.45
+     },
+     {
+      "type": "img",
+      "ratio": 0.45
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 11398,
+    "margins": {
+     "left": 16,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "div.relative.h-[48svh]",
+      "tag": "div",
+      "top": 76,
+      "height": 405,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 12,
+      "right": 12,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.relative.z-10",
+      "tag": "div",
+      "top": 457,
+      "height": 989,
+      "words": 81,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Self drive cars, at your door",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 37,
+      "textLeft": 32,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-24.bg-brand-900",
+      "tag": "section",
+      "top": 1542,
+      "height": 1004,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-brand-500.py-20",
+      "tag": "section",
+      "top": 2547,
+      "height": 4019,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Our fleet",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 78,
+      "textLeft": 16,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 6565,
+      "height": 1190,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-white.py-24",
+      "tag": "section",
+      "top": 7755,
+      "height": 751,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 55,
+      "textLeft": 16,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-24",
+      "tag": "section",
+      "top": 8506,
+      "height": 639,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 9145,
+      "height": 902,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 10111,
+      "height": 1287,
+      "words": 115,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 23,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars, at your door",
+      "size": 40,
+      "top": 485,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 3
+     },
+     {
+      "x": 32,
+      "n": 2
+     },
+     {
+      "x": 48,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (15, 16, 17, 18, 20, 24, 28, 32, 36, 48, 49, 72, 95).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt Rokkitt and Literata, but the page renders Plus Jakarta Sans.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "A section keeps its content on one side and leaves 776px of the width empty: \"A car for the whole month\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 4 screens in a row: \"Our fleet\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 16px on the left, 52px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 768,
+   "message": "Large text lies under another element at some scroll position: \"Delivered across Chennai\" (screen 7, 25% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\desktop-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\desktop-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\desktop-page-02.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\tablet-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\tablet-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\mobile-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\mobile-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\after\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,2509 @@
+{
+ "url": "http://127.0.0.1:3000/",
+ "at": "2026-11-13T02:06:45.027Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.89,
+    0.53,
+    0.65,
+    0.69,
+    0.6,
+    0.78
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4721,
+     "screens": 5.2,
+     "words": 1077,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 67,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "maruti-alto-k10.webp",
+      "maruti-alto-k10.webp",
+      "hyundai-santro-manual.webp",
+      "hyundai-santro-automatic.webp",
+      "renault-kwid.webp",
+      "hyundai-grand-i10-nios.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "chars": 50,
+     "lines": 2,
+     "size": 48,
+     "vw": 3.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 332,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "lines": 2,
+     "size": 48,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "words": 9,
+      "chars": 50,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 332,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      24,
+      48
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 14,
+      "leading": 1.43,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 48,
+      "vw": 3.3,
+      "font": "Plus Jakarta Sans",
+      "text": "Self drive cars in Chennai,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 12
+    },
+    "eyebrows": [
+     {
+      "text": "Serving Chennai for 29+ years",
+      "above": "Self drive cars in Chennai, delivered to",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 292
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0a322a",
+       "top": 4060,
+       "hsl": {
+        "h": 168,
+        "s": 0.67,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#314158",
+       "share": 0.28
+      },
+      {
+       "color": "#1e293b",
+       "share": 0.26
+      },
+      {
+       "color": "#64748b",
+       "share": 0.25
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#18715f",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1e293b"
+     },
+     "lowContrast": [
+      {
+       "text": "Monthly plans",
+       "ratio": 3.8,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#facc15",
+       "bg": "#18715f"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 28,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Find available cars",
+      "Ask us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 33,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "div#book.card.p-4 → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "label.flex.min-h-11 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "li.card.flex → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "li.card.flex → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.bg-gradient-to-b.from-brand-50 → linear-gradient(in oklab, rgb(238, 251, 248) 0%, rgb(250, 250, 247) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "p.container-page.mt-10 1200px"
+     ],
+     "outlinedBoxes": 32,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 33,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 899
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1347
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2334
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2576
+      },
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2830
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4721,
+    "margins": {
+     "left": 160,
+     "right": 185
+    },
+    "sections": [
+     {
+      "sel": "section.bg-gradient-to-b.from-brand-50",
+      "tag": "section",
+      "top": 65,
+      "height": 730,
+      "words": 90,
+      "media": 0,
+      "middle": 89,
+      "heading": {
+       "text": "Self drive cars in Chennai,",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 160,
+      "right": 185,
+      "textLeft": 160,
+      "textRight": 217,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 795,
+      "height": 302,
+      "words": 63,
+      "media": 0,
+      "middle": 170,
+      "heading": {
+       "text": "Book in 3 easy steps",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 212,
+      "textLeft": 160,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1097,
+      "height": 226,
+      "words": 28,
+      "media": 0,
+      "middle": 111,
+      "heading": {
+       "text": "Explore our fleet",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 160,
+      "textLeft": 160,
+      "textRight": 160,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1323,
+      "height": 907,
+      "words": 90,
+      "media": 6,
+      "middle": 18,
+      "heading": {
+       "text": "₹1,800",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 161,
+      "right": 161,
+      "textLeft": 177,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 2230,
+      "height": 322,
+      "words": 54,
+      "media": 0,
+      "middle": 90,
+      "heading": {
+       "text": "Why Chennai drives with Smile Cars",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 190,
+      "textLeft": 160,
+      "textRight": 190,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 2552,
+      "height": 186,
+      "words": 34,
+      "media": 0,
+      "middle": 86,
+      "heading": {
+       "text": "4.9★",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 199,
+      "right": 189,
+      "textLeft": 199,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-10",
+      "tag": "section",
+      "top": 2738,
+      "height": 656,
+      "words": 249,
+      "media": 0,
+      "middle": 64,
+      "heading": {
+       "text": "What our customers say",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 186,
+      "textLeft": 160,
+      "textRight": 186,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.grid",
+      "tag": "section",
+      "top": 3394,
+      "height": 278,
+      "words": 57,
+      "media": 0,
+      "middle": 152,
+      "heading": {
+       "text": "Need a car for a month or more?",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 184,
+      "right": 196,
+      "textLeft": 184,
+      "textRight": 196,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 3672,
+      "height": 324,
+      "words": 86,
+      "media": 0,
+      "middle": 24,
+      "heading": {
+       "text": "Areas we deliver to",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 186,
+      "textLeft": 160,
+      "textRight": 186,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 4060,
+      "height": 661,
+      "words": 115,
+      "media": 0,
+      "middle": 165,
+      "heading": {
+       "text": "Quick links",
+       "size": 14,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 286,
+      "textLeft": 160,
+      "textRight": 286,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "size": 48,
+      "top": 332,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 160,
+      "n": 8
+     },
+     {
+      "x": 177,
+      "n": 4
+     },
+     {
+      "x": 556,
+      "n": 2
+     },
+     {
+      "x": 753,
+      "n": 2
+     },
+     {
+      "x": 934,
+      "n": 2
+     },
+     {
+      "x": 865,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 420,
+     "y": 720,
+     "w": 1020,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    0.76,
+    0.96,
+    0.68,
+    0.73,
+    0.74,
+    0.8
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6215,
+     "screens": 6.1,
+     "words": 1066,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 67,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "maruti-alto-k10.webp",
+      "maruti-alto-k10.webp",
+      "hyundai-santro-manual.webp",
+      "hyundai-santro-automatic.webp",
+      "renault-kwid.webp",
+      "hyundai-grand-i10-nios.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "chars": 50,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 137,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "lines": 2,
+     "size": 48,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "words": 9,
+      "chars": 50,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 137,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      24,
+      48
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 14,
+      "leading": 1.43,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 28,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "Plus Jakarta Sans",
+      "text": "Self drive cars in Chennai,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 12
+    },
+    "eyebrows": [
+     {
+      "text": "Serving Chennai for 29+ years",
+      "above": "Self drive cars in Chennai, delivered to",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 97
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 405,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0a322a",
+       "top": 5514,
+       "hsl": {
+        "h": 168,
+        "s": 0.67,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#314158",
+       "share": 0.28
+      },
+      {
+       "color": "#1e293b",
+       "share": 0.26
+      },
+      {
+       "color": "#64748b",
+       "share": 0.25
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#18715f",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1e293b"
+     },
+     "lowContrast": [
+      {
+       "text": "Monthly plans",
+       "ratio": 3.8,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#facc15",
+       "bg": "#18715f"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 28,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 99620 97400",
+      "Book now",
+      "Find available cars",
+      "Ask us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 34,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "nav.card.absolute → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "div#book.card.p-4 → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "label.flex.min-h-11 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "li.card.flex → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.bg-gradient-to-b.from-brand-50 → linear-gradient(in oklab, rgb(238, 251, 248) 0%, rgb(250, 250, 247) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "p.container-page.mt-10 768px"
+     ],
+     "outlinedBoxes": 33,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 34,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1143
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1805
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3224
+      },
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3944
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6215,
+    "margins": {
+     "left": 16,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "section.bg-gradient-to-b.from-brand-50",
+      "tag": "section",
+      "top": 65,
+      "height": 974,
+      "words": 90,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Self drive cars in Chennai,",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 41,
+      "textLeft": 16,
+      "textRight": 129,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 1039,
+      "height": 386,
+      "words": 63,
+      "media": 0,
+      "middle": 132,
+      "heading": {
+       "text": "Book in 3 easy steps",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 42,
+      "textLeft": 16,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1425,
+      "height": 356,
+      "words": 28,
+      "media": 0,
+      "middle": 132,
+      "heading": {
+       "text": "Explore our fleet",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1781,
+      "height": 1339,
+      "words": 90,
+      "media": 6,
+      "middle": 18,
+      "heading": {
+       "text": "₹1,800",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 33,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 3120,
+      "height": 468,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Chennai drives with Smile Cars",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 62,
+      "textLeft": 16,
+      "textRight": 62,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 3588,
+      "height": 264,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "4.9★",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 59,
+      "right": 68,
+      "textLeft": 59,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-10",
+      "tag": "section",
+      "top": 3852,
+      "height": 872,
+      "words": 249,
+      "media": 0,
+      "middle": 59,
+      "heading": {
+       "text": "What our customers say",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 38,
+      "textLeft": 16,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.grid",
+      "tag": "section",
+      "top": 4724,
+      "height": 310,
+      "words": 57,
+      "media": 0,
+      "middle": 84,
+      "heading": {
+       "text": "Need a car for a month or more?",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 42,
+      "textLeft": 40,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 5034,
+      "height": 416,
+      "words": 86,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Areas we deliver to",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 85,
+      "textLeft": 16,
+      "textRight": 85,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 5514,
+      "height": 701,
+      "words": 115,
+      "media": 0,
+      "middle": 69,
+      "heading": {
+       "text": "Quick links",
+       "size": 14,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 46,
+      "textLeft": 16,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "size": 48,
+      "top": 137,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 8
+     },
+     {
+      "x": 33,
+      "n": 6
+     },
+     {
+      "x": 409,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.99,
+    0.64,
+    0.87,
+    0.91,
+    0.86,
+    0.76,
+    0.71,
+    0.83,
+    0.51,
+    0.99,
+    0.99
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8884,
+     "screens": 10.5,
+     "words": 1050,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 67,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "maruti-alto-k10.webp",
+      "maruti-alto-k10.webp",
+      "hyundai-santro-manual.webp",
+      "hyundai-santro-automatic.webp",
+      "renault-kwid.webp",
+      "hyundai-grand-i10-nios.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 2,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "chars": 50,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 169,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Self drive cars in Chennai, delivered to your door",
+     "words": 9,
+     "lines": 2,
+     "size": 30,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "words": 9,
+      "chars": 50,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 169,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Book in 3 easy steps",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1086,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Explore our fleet",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 1616,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "₹1,800/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2196,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹1,800/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2630,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹1,500/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3065,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹1,800/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3499,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹1,800/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3934,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹2,000/day",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 4368,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Why Chennai drives with Smile Cars",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4505,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9★",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 5290,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "29+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 5290,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "2,00,000+",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 5408,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "200+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 5408,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Logo-free",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 5506,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "24/7",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 5506,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What our customers say",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5691,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Need a car for a month or more?",
+      "words": 8,
+      "chars": 31,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 6185,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Own a car? Attach it with us",
+      "words": 7,
+      "chars": 28,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 6462,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Areas we deliver to",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6771,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 20,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 12,
+     "centered": 6,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      24,
+      30
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 14,
+      "leading": 1.43,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 30,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Self drive cars in Chennai,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 12
+    },
+    "eyebrows": [
+     {
+      "text": "4.9 · 3200+ Google reviews",
+      "above": "Self drive cars in Chennai, delivered to",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 129
+     },
+     {
+      "text": "5 seats",
+      "above": "₹1,800/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 2152
+     },
+     {
+      "text": "5 seats",
+      "above": "₹1,800/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 2586
+     },
+     {
+      "text": "5 seats",
+      "above": "₹1,500/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 3021
+     },
+     {
+      "text": "5 seats",
+      "above": "₹1,800/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 3455
+     },
+     {
+      "text": "5 seats",
+      "above": "₹1,800/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 3890
+     },
+     {
+      "text": "5 seats",
+      "above": "₹2,000/day",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 12,
+      "top": 4324
+     },
+     {
+      "text": "Monthly plans",
+      "above": "Need a car for a month or more?",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6161
+     },
+     {
+      "text": "For car owners",
+      "above": "Own a car? Attach it with us",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6438
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 404,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0a322a",
+       "top": 7663,
+       "hsl": {
+        "h": 168,
+        "s": 0.67,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#314158",
+       "share": 0.28
+      },
+      {
+       "color": "#64748b",
+       "share": 0.26
+      },
+      {
+       "color": "#1e293b",
+       "share": 0.25
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#18715f",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1e293b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 27,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 34,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "nav.card.absolute → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "div#book.card.p-4 → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+      "label.flex.min-h-11 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "li.card.flex → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.bg-gradient-to-b.from-brand-50 → linear-gradient(in oklab, rgb(238, 251, 248) 0%, rgb(250, 250, 247) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "p.container-page.mt-10 390px"
+     ],
+     "outlinedBoxes": 33,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 34,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 5743
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "plus jakarta sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8884,
+    "margins": {
+     "left": 16,
+     "right": 17
+    },
+    "sections": [
+     {
+      "sel": "section.bg-gradient-to-b.from-brand-50",
+      "tag": "section",
+      "top": 65,
+      "height": 973,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Self drive cars in Chennai,",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 19,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 1038,
+      "height": 554,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Book in 3 easy steps",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 63,
+      "textLeft": 16,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1592,
+      "height": 226,
+      "words": 28,
+      "media": 0,
+      "middle": 466,
+      "heading": {
+       "text": "Explore our fleet",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -497,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 1818,
+      "height": 2639,
+      "words": 90,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "₹1,800",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 33,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 4457,
+      "height": 792,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Chennai drives with Smile Cars",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-6",
+      "tag": "section",
+      "top": 5249,
+      "height": 402,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "4.9★",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 36,
+      "right": 26,
+      "textLeft": 36,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-10",
+      "tag": "section",
+      "top": 5651,
+      "height": 462,
+      "words": 249,
+      "media": 0,
+      "middle": 1151,
+      "heading": {
+       "text": "What our customers say",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -1389,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.grid",
+      "tag": "section",
+      "top": 6113,
+      "height": 610,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Need a car for a month or more?",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 54,
+      "textLeft": 40,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container-page.py-12",
+      "tag": "section",
+      "top": 6723,
+      "height": 876,
+      "words": 86,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Areas we deliver to",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 135,
+      "textLeft": 16,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-16.bg-brand-900",
+      "tag": "footer",
+      "top": 7663,
+      "height": 1221,
+      "words": 115,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Quick links",
+       "size": 14,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 29,
+      "textLeft": 16,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Self drive cars in Chennai, delivered to your door",
+      "size": 30,
+      "top": 169,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 33,
+      "n": 11
+     },
+     {
+      "x": 16,
+      "n": 8
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Serving Chennai for 29+ years\" (pill) above \"Self drive cars in Chennai, delivered to\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): section.bg-gradient-to-b.from-brand-50 → linear-gradient(in oklab, rgb(238, 251, 248) 0%, rgb(250, 250, 247) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "33 box-shadow(s) on elements at rest: div#book.card.p-4 → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px | label.flex.min-h-11 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | li.card.flex → rgba(30, 41, 59, 0.06) 0px 4px 20px -2px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): header.sticky.top-0 1440px | p.container-page.mt-10 1200px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "32 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "3 row(s) of identical cards each topped with a small icon (3, 4, 6 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fafaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Monthly plans\" 3.8:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (4.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "12 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 48px (3.3vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 160px on the left, 185px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 768,
+   "message": "Large text lies under another element at some scroll position: \"₹1,800/day\" (screen 3, 100% hidden); \"Areas we deliver to\" (screen 5, 50% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 390,
+   "message": "2 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\desktop-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\tablet-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\mobile-page-01.jpg",
+    "D:\\Professional\\SmileCars\\smilecars\\.taste-skill\\before\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

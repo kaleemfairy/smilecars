@@ -8,15 +8,17 @@
 @theme {
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 
-  /* Green from the client logo (#17b59e). It is too light for text on white (2.4:1),
-     so text and buttons use the darker shades of the same hue (600 = 5.0:1). */
-  --color-brand-50: #eefbf8;
-  --color-brand-100: #d1f4ec;
-  --color-brand-500: #17b59e;
-  --color-brand-600: #1b7d6a;
-  --color-brand-700: #18715f;
-  --color-brand-800: #145c4d;
-  --color-brand-900: #0a322a;
+  /* Smile Cars brand green #27AE90, the primary colour of the current website.
+     500/600 = the brand colour itself (buttons, selected states, icons, headline accent).
+     It is light for small text on white (2.8:1), so links and small text use the darker
+     steps of the same hue: 700 = 5.0:1, 800 = 7.9:1. */
+  --color-brand-50: #f2faf7;
+  --color-brand-100: #dcf3ec;
+  --color-brand-500: #27ae90;
+  --color-brand-600: #27ae90;
+  --color-brand-700: #1c7d67;
+  --color-brand-800: #155c4c;
+  --color-brand-900: #0e3e34;
 
   --color-accent-300: #fde68a;
   --color-accent-400: #facc15;
@@ -32,7 +34,7 @@
   --color-line-strong: #cbd5e1;
 
   --shadow-card: 0 4px 20px -2px rgb(30 41 59 / 0.06);
-  --shadow-raised: 0 10px 25px -4px rgb(27 125 106 / 0.14);
+  --shadow-raised: 0 10px 25px -4px rgb(39 174 144 / 0.16);
 }
 
 @layer base {
