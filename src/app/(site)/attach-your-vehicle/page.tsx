@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BadgeIndianRupee, ShieldCheck, Wrench } from "lucide-react";
 import { EnquiryForm } from "./EnquiryForm";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -10,12 +11,15 @@ export const metadata: Metadata = {
 
 export default function AttachPage() {
   return (
-    <div className="container-page max-w-3xl py-8">
-      <h1 className="text-3xl font-extrabold">Attach your vehicle with Smile Cars</h1>
-      <p className="mt-2 text-muted">
-        Earn from your car when you are not using it. Tell us about your car and our team will call you to explain how it works.
-      </p>
-      <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+    <>
+    <PageHeader
+      narrow
+      eyebrow="Have a car to share?"
+      title={<>Let your car earn its own <em className="not-italic text-brand-500">smile.</em></>}
+      lead="Earn from your car when you are not using it. Tell us about your car and our team will call you to explain how it works."
+    />
+    <div className="container-page max-w-3xl py-10">
+      <ul className=" grid gap-3 sm:grid-cols-3">
         {[
           [BadgeIndianRupee, "Regular income", "From your idle car"],
           [ShieldCheck, "29+ years in Chennai", "A team you can trust"],
@@ -24,7 +28,7 @@ export default function AttachPage() {
           const I = Icon as typeof Wrench;
           return (
             <li key={t as string} className="card flex items-center gap-3 p-4">
-              <I className="size-7 text-brand-600" aria-hidden />
+              <I className="size-7 text-brand-700" aria-hidden />
               <div><p className="font-bold">{t as string}</p><p className="text-sm text-muted">{s as string}</p></div>
             </li>
           );
@@ -32,5 +36,6 @@ export default function AttachPage() {
       </ul>
       <div className="mt-8"><EnquiryForm /></div>
     </div>
+    </>
   );
 }

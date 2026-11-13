@@ -41,7 +41,7 @@ export default async function ConfirmPage(props: PageProps<"/book/confirm">) {
   return (
     <div className="container-page max-w-3xl py-6">
       <Stepper current={3} />
-      <h1 className="mt-6 text-2xl font-extrabold">Confirm your booking</h1>
+      <h1 className="mt-7 text-[28px] font-extrabold leading-tight sm:text-[34px]">Confirm your booking</h1>
 
       <section className="card mt-5 flex gap-4 p-4" aria-label="Your car">
         <CarImage car={car} className="h-20 w-28 shrink-0 rounded-lg" />

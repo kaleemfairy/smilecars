@@ -4,6 +4,7 @@ import { getPublicSettings } from "@/lib/data";
 import Link from "next/link";
 import { phoneDigits } from "@/lib/format";
 import { Testimonials, TrustStrip } from "@/components/content/Trust";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -32,9 +33,15 @@ export default async function AboutPage() {
     url: process.env.NEXT_PUBLIC_SITE_URL,
   };
   return (
-    <div className="container-page max-w-3xl py-8">
-      <h1 className="text-3xl font-extrabold">About Smile Cars®</h1>
-      <div className="prose-page mt-4">
+    <>
+    <PageHeader
+      narrow
+      eyebrow="Chennai's own car rental company"
+      title="About Smile Cars®"
+      lead="Self drive cars in Chennai for over 29 years, delivered to your door."
+    />
+    <div className="container-page max-w-3xl py-10">
+      <div className="prose-page">
         <p>
           Smile Cars® has been renting self drive cars in Chennai for over 29 years. From our base in Anna Nagar West we
           deliver well-maintained hatchbacks, sedans and SUVs across the city, for a day, a week or a month.
@@ -82,14 +89,14 @@ export default async function AboutPage() {
       <section id="contact" className="card mt-8 scroll-mt-20 p-5">
         <h2 className="text-lg font-bold">Contact us</h2>
         <ul className="mt-3 space-y-3 text-sm">
-          <li className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-600" aria-hidden /><span><strong className="block">Main office</strong>{s.address}</span></li>
+          <li className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-700" aria-hidden /><span><strong className="block">Main office</strong>{s.address}</span></li>
           {s.branchAddresses.map((a) => (
-            <li key={a} className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-600" aria-hidden /><span><strong className="block">Branch</strong>{a}</span></li>
+            <li key={a} className="flex gap-3"><MapPin className="size-5 shrink-0 text-brand-700" aria-hidden /><span><strong className="block">Branch</strong>{a}</span></li>
           ))}
           {s.phones.map((p) => (
-            <li key={p} className="flex gap-3"><Phone className="size-5 shrink-0 text-brand-600" aria-hidden /><a href={`tel:+${phoneDigits(p)}`} className="font-semibold hover:underline">{p}</a></li>
+            <li key={p} className="flex gap-3"><Phone className="size-5 shrink-0 text-brand-700" aria-hidden /><a href={`tel:+${phoneDigits(p)}`} className="font-semibold hover:underline">{p}</a></li>
           ))}
-          <li className="flex gap-3"><Mail className="size-5 shrink-0 text-brand-600" aria-hidden /><a href={`mailto:${s.email}`} className="font-semibold hover:underline">{s.email}</a></li>
+          <li className="flex gap-3"><Mail className="size-5 shrink-0 text-brand-700" aria-hidden /><a href={`mailto:${s.email}`} className="font-semibold hover:underline">{s.email}</a></li>
         </ul>
         <iframe
           title="Smile Cars location on Google Maps"
@@ -101,5 +108,6 @@ export default async function AboutPage() {
       </section>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </div>
+    </>
   );
 }

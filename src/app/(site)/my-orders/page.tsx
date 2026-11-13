@@ -7,6 +7,7 @@ import { rateLimit } from "@/lib/rate-limit";
 import { requestTime } from "@/lib/time";
 import { StatusChip } from "@/components/booking/StatusChip";
 import { BOOKING_STATUSES, type Booking } from "@/lib/types";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -61,9 +62,13 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
   }
 
   return (
-    <div className="container-page max-w-2xl py-8">
-      <h1 className="text-3xl font-extrabold">My orders</h1>
-      <p className="mt-2 text-muted">Enter your ticket number or the phone number you booked with.</p>
+    <>
+    <PageHeader
+      eyebrow="Your booking, right here"
+      title="My orders"
+      lead="Enter your ticket number or the phone number you booked with. No account needed."
+    />
+    <div className="container-page max-w-2xl py-10">
       <form method="get" className="card mt-5 flex flex-col gap-3 p-4 sm:flex-row">
         <label htmlFor="q" className="sr-only">Ticket or phone number</label>
         <input id="q" name="q" defaultValue={q} required placeholder="SC-0042, 98400 12345 or +971 50 123 4567" className="field flex-1" />
@@ -97,7 +102,7 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
                 <dt className="text-muted">Total</dt><dd className="font-semibold">{inr(b.price.total)}</dd>
               </dl>
               {b.status === "new" && b.holdExpiresAt > requestTime() && (
-                <p className="mt-3 rounded-lg bg-accent-300/30 px-3 py-2 text-sm">
+                <p className="mt-3 rounded-lg bg-tint px-3 py-2 text-sm">
                   Waiting for our call. Car held until {fmtDateTime(b.holdExpiresAt)}.
                 </p>
               )}
@@ -111,5 +116,6 @@ export default async function MyOrdersPage(props: PageProps<"/my-orders">) {
         </ul>
       )}
     </div>
+    </>
   );
 }

@@ -130,7 +130,7 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
               name="countryCode"
               value={countryCode}
               onChange={(e) => setCountryCode(e.target.value)}
-              className="min-h-12 w-28 shrink-0 rounded-l-xl border border-r-0 border-line-strong bg-brand-50 px-2 font-semibold"
+              className="min-h-12 w-28 shrink-0 rounded-l-lg border border-r-0 border-[#dfe9e5] bg-tint px-2 font-semibold"
             >
               {COUNTRY_CODES.map(([code, country]) => (
                 <option key={code + country} value={code}>
@@ -184,7 +184,7 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
         </div>
       </section>
 
-      <aside className="space-y-4 md:sticky md:top-20">
+      <aside className="space-y-4 md:sticky md:top-24">
         <section className="card p-4 sm:p-5" aria-labelledby="price-h">
           <h2 id="price-h" className="mb-2 text-lg font-bold">Price breakdown</h2>
           <PriceTable price={price} />
@@ -208,7 +208,7 @@ export function ConfirmForm({ search, carId, initialPrice, holdHours }: Props) {
             )}
           </div>
         </section>
-        <p className="flex gap-2 rounded-xl border border-accent-300 bg-accent-300/30 p-3 text-sm">
+        <p className="flex gap-2 rounded-xl border border-brand-100 bg-tint p-3 text-sm">
           <Info className="mt-0.5 size-4 shrink-0" aria-hidden />
           <span>
             No payment now. We hold this car for {holdHours} hours and our team will call you.

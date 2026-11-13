@@ -16,7 +16,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       <main id="main">{children}</main>
       <SiteFooter settings={settings} />
       <FloatingContact settings={settings} />
-      {process.env.NEXT_PUBLIC_CHAT_ENABLED !== "false" && <ChatWidget />}
+      {process.env.NEXT_PUBLIC_CHAT_ENABLED !== "false" && <ChatWidget whatsappNumber={settings.whatsappNumber} />}
       <GoogleTags />
     </>
   );

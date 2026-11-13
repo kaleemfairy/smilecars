@@ -41,7 +41,7 @@ export default async function BookPage(props: PageProps<"/book">) {
     return (
       <div className="container-page max-w-xl py-6">
         <Stepper current={1} />
-        <h1 className="mt-6 text-2xl font-extrabold">When do you need the car?</h1>
+        <h1 className="mt-7 text-[28px] font-extrabold leading-tight sm:text-[34px]">When do you need the car?</h1>
         {result && !result.ok && (
           <p role="alert" className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
             {result.error}
@@ -86,7 +86,7 @@ export default async function BookPage(props: PageProps<"/book">) {
           Edit
         </Link>
       </div>
-      <h1 className="mt-6 text-2xl font-extrabold">Choose your car</h1>
+      <h1 className="mt-7 text-[28px] font-extrabold leading-tight sm:text-[34px]">Choose your car</h1>
       <CarResults
         results={results.map((r) => ({ car: { ...r.car, regNumber: "" }, price: r.price }))}
         confirmQuery={query}

@@ -67,11 +67,11 @@ export default async function LocationPage(props: PageProps<"/locations/[slug]">
   };
 
   return (
-    <div className="container-page py-8">
+    <div className="container-page py-10">
       <div className="grid gap-6 lg:grid-cols-[1fr_420px] lg:items-start">
         <div>
-          <p className="chip text-brand-700"><MapPin className="size-3.5" aria-hidden />Chennai</p>
-          <h1 className="mt-3 text-3xl font-extrabold sm:text-4xl">Self drive cars in {loc.name}</h1>
+          <p className="eyebrow flex items-center gap-1.5"><MapPin className="size-3.5" aria-hidden />Self drive cars · Chennai</p>
+          <h1 className="mt-3 text-[34px] font-extrabold leading-[1.05] sm:text-[46px]">Self drive cars in <span className="text-brand-500">{loc.name}</span></h1>
           <p className="mt-4 text-lg leading-8 text-slate-700">{loc.intro}</p>
           <h2 className="mt-6 font-bold">We deliver around</h2>
           <ul className="mt-2 flex flex-wrap gap-2">

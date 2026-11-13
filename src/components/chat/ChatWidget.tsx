@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bot, Loader2, MessageCircle, Send, X } from "lucide-react";
+import { Loader2, Send, Smile, Sparkles, X } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 interface Msg {
   role: "user" | "assistant";
@@ -23,6 +24,13 @@ function renderText(text: string) {
   return parts.map((part, i) => {
     if (part.startsWith("/")) {
       const label = part.startsWith("/book/confirm") ? "Book this car" : part.startsWith("/book") ? "See available cars" : part;
+      if (part.startsWith("/book")) {
+        return (
+          <Link key={i} href={part} className="btn btn-primary btn-sm my-1 min-h-9 px-3 text-xs">
+            {label}
+          </Link>
+        );
+      }
       return (
         <Link key={i} href={part} className="font-semibold text-brand-700 underline">
           {label}
@@ -40,7 +48,7 @@ function renderText(text: string) {
   });
 }
 
-export function ChatWidget() {
+export function ChatWidget({ whatsappNumber = "" }: { whatsappNumber?: string }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Msg[]>([GREETING]);
@@ -111,42 +119,44 @@ export function ChatWidget() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed bottom-4 left-4 z-40 flex h-14 items-center gap-2 rounded-full bg-white pl-2 pr-4 font-semibold text-brand-700 shadow-lg ring-1 ring-line hover:shadow-raised print:hidden"
+          className="fixed bottom-4 left-3 z-40 flex h-12 items-center gap-2 rounded-full bg-forest px-4 text-[13px] font-semibold text-white shadow-float transition-transform hover:-translate-y-0.5 sm:bottom-6 sm:left-6 sm:h-[52px] print:hidden"
           aria-label="Open chat assistant"
         >
-          <span className="flex size-10 items-center justify-center rounded-full bg-brand-600 text-white">
-            <MessageCircle className="size-5" aria-hidden />
-          </span>
-          <span className="hidden sm:inline">Ask us</span>
+          <Sparkles className="size-5 text-[#76d8b7]" aria-hidden />
+          Ask us
         </button>
       )}
 
+      {open && (
+        <div className="fixed inset-0 z-50 bg-[#112922]/45 sm:hidden" onClick={() => setOpen(false)} aria-hidden />
+      )}
       {open && (
         <div
           role="dialog"
           aria-modal="false"
           aria-label="Smile Cars chat assistant"
-          className="fixed inset-x-0 bottom-0 z-50 flex h-[85dvh] flex-col rounded-t-3xl bg-white shadow-2xl sm:inset-x-auto sm:bottom-4 sm:left-4 sm:h-[600px] sm:max-h-[85dvh] sm:w-[380px] sm:rounded-3xl"
+          className="fixed inset-x-0 bottom-0 z-50 flex h-[88dvh] flex-col rounded-t-[18px] bg-white shadow-[0_-8px_40px_rgb(17_41_34/0.19)] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:h-[620px] sm:max-h-[85dvh] sm:w-[400px] sm:rounded-[18px]"
         >
-          <header className="flex items-center gap-3 border-b border-line px-4 py-3">
-            <span className="flex size-10 items-center justify-center rounded-full bg-brand-600 text-white">
-              <Bot className="size-5" aria-hidden />
+          <span className="mx-auto mt-2 h-1 w-10 rounded-full bg-line-strong sm:hidden" aria-hidden />
+          <header className="flex items-center gap-3 px-5 pb-3 pt-3 sm:pt-5">
+            <span className="flex size-[42px] items-center justify-center rounded-full bg-brand-500 text-white">
+              <Smile className="size-5" aria-hidden />
             </span>
             <div className="flex-1">
-              <p className="font-bold">Smile Cars Assistant</p>
-              <p className="text-xs text-muted">AI assistant · replies in seconds</p>
+              <p className="font-bold">Smile Cars assistant</p>
+              <p className="text-xs text-muted">AI assistant · here to help you get going</p>
             </div>
-            <button type="button" onClick={() => setOpen(false)} className="flex size-11 items-center justify-center rounded-full hover:bg-brand-50" aria-label="Close chat">
+            <button type="button" onClick={() => setOpen(false)} className="flex size-11 items-center justify-center rounded-full bg-[#f0f5f2] text-[#54635e] hover:bg-tint" aria-label="Close chat">
               <X className="size-5" aria-hidden />
             </button>
           </header>
 
-          <div ref={listRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4" aria-live="polite">
+          <div ref={listRef} className="flex-1 space-y-3 overflow-y-auto px-5 py-3" aria-live="polite">
             {messages.map((m, i) => (
               <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
                 <p
-                  className={`max-w-[85%] whitespace-pre-wrap rounded-2xl px-4 py-2.5 text-[15px] leading-6 ${
-                    m.role === "user" ? "rounded-br-sm bg-brand-600 text-white" : "rounded-bl-sm bg-brand-50 text-ink"
+                  className={`max-w-[88%] whitespace-pre-wrap px-4 py-3 text-[14px] leading-6 ${
+                    m.role === "user" ? "rounded-[12px_12px_3px_12px] bg-brand-700 text-white" : "rounded-[3px_12px_12px_12px] bg-tint text-ink"
                   }`}
                 >
                   {m.role === "assistant" ? renderText(m.content) : m.content}
@@ -161,7 +171,7 @@ export function ChatWidget() {
             {messages.length === 1 && !busy && (
               <div className="flex flex-wrap gap-2 pt-1">
                 {SUGGESTIONS.map((s) => (
-                  <button key={s} type="button" onClick={() => send(s)} className="min-h-10 rounded-full border border-brand-600 px-3 text-sm font-semibold text-brand-700 hover:bg-brand-50">
+                  <button key={s} type="button" onClick={() => send(s)} className="min-h-10 rounded-full border border-[#b9d9cf] bg-white px-3.5 text-[13px] font-semibold text-brand-700 hover:border-brand-500 hover:bg-tint">
                     {s}
                   </button>
                 ))}
@@ -174,7 +184,7 @@ export function ChatWidget() {
               e.preventDefault();
               send(input);
             }}
-            className="flex gap-2 border-t border-line p-3"
+            className="flex gap-2 border-t border-line px-4 pb-2 pt-3"
           >
             <label htmlFor="chat-input" className="sr-only">Your message</label>
             <input
@@ -187,10 +197,20 @@ export function ChatWidget() {
               autoComplete="off"
               className="field flex-1 rounded-full"
             />
-            <button type="submit" disabled={busy || !input.trim()} className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white disabled:opacity-50" aria-label="Send">
+            <button type="submit" disabled={busy || !input.trim()} className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white hover:bg-brand-700 disabled:opacity-50" aria-label="Send">
               <Send className="size-5" aria-hidden />
             </button>
           </form>
+          {whatsappNumber && (
+            <a
+              href={`https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent("Hi Smile Cars, I have a question about a booking.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-4 flex min-h-10 items-center justify-center gap-2 rounded-lg text-[13px] font-bold text-brand-700 hover:bg-tint"
+            >
+              <WhatsAppIcon className="size-4 text-whatsapp-dark" /> Talk to a human on WhatsApp
+            </a>
+          )}
           <p className="px-4 pb-3 text-center text-[11px] text-muted">AI answers can be wrong. Prices are confirmed when we call you.</p>
         </div>
       )}

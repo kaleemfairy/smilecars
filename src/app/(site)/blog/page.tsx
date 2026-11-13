@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/content/legacy";
 import { fmtDate } from "@/lib/format";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function BlogIndex() {
   return (
-    <div className="container-page max-w-3xl py-8">
-      <h1 className="text-3xl font-extrabold">Smile Cars® blog</h1>
-      <p className="mt-2 text-muted">Guides and tips for self drive car rental in Chennai.</p>
+    <>
+    <PageHeader narrow eyebrow="Good reads" title="Smile Cars® blog" lead="Guides and tips for self drive car rental in Chennai." />
+    <div className="container-page max-w-3xl py-10">
       <ul className="mt-6 space-y-4">
         {BLOG_POSTS.map((p) => (
           <li key={p.slug}>
@@ -26,5 +27,6 @@ export default function BlogIndex() {
         ))}
       </ul>
     </div>
+    </>
   );
 }

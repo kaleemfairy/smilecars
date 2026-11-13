@@ -27,7 +27,7 @@ export function PriceTable({ price }: { price: PriceBreakdown }) {
         </div>
         {!!price.advance && price.advance > 0 && (
           <>
-            <div className="flex items-start justify-between gap-4 bg-accent-300/30 px-2 py-2.5">
+            <div className="flex items-start justify-between gap-4 bg-tint px-2 py-2.5">
               <dt>
                 <strong>Advance to confirm</strong>
                 <span className="block text-xs text-muted">Paid by GPay, PhonePe or bank transfer when we call</span>

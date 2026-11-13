@@ -25,20 +25,20 @@ export default async function SuccessPage(props: PageProps<"/book/success/[id]">
     <div className="container-page max-w-2xl py-8">
       <TrackBooking ticket={booking.ticket} total={booking.price.total} carName={booking.carName} />
       <div className="card p-6 text-center">
-        <CheckCircle2 className="mx-auto size-14 text-brand-600" aria-hidden />
-        <h1 className="mt-3 text-2xl font-extrabold">Booking received!</h1>
+        <CheckCircle2 className="mx-auto size-14 text-brand-700" aria-hidden />
+        <h1 className="mt-3 text-[28px] font-extrabold sm:text-[34px]">Booking received!</h1>
         <p className="mt-2 text-muted">Save your ticket number to track this booking.</p>
-        <div className="mx-auto mt-5 flex max-w-xs items-center justify-between gap-3 rounded-xl border-2 border-brand-600 px-4 py-3">
+        <div className="mx-auto mt-5 flex max-w-xs items-center justify-between gap-3 rounded-xl border-2 border-brand-500 bg-tint px-4 py-3">
           <div className="text-left">
             <p className="text-xs font-bold uppercase text-muted">Ticket number</p>
-            <p className="text-2xl font-extrabold tracking-wide">{booking.ticket}</p>
+            <p className="font-display text-[26px] font-extrabold tracking-wide text-brand-700">{booking.ticket}</p>
           </div>
           <CopyButton text={booking.ticket} />
         </div>
       </div>
 
       {booking.status === "new" && (
-        <p className="mt-4 flex gap-3 rounded-xl border border-accent-300 bg-accent-300/30 p-4 text-sm">
+        <p className="mt-4 flex gap-3 rounded-xl border border-brand-100 bg-tint p-4 text-sm">
           <Clock className="mt-0.5 size-5 shrink-0" aria-hidden />
           <span>
             We are holding <strong>{booking.carName}</strong> for you until{" "}
@@ -51,12 +51,12 @@ export default async function SuccessPage(props: PageProps<"/book/success/[id]">
       <section className="card mt-4 p-5">
         <h2 className="font-bold">What happens next</h2>
         <ol className="mt-3 space-y-3 text-sm">
-          <li className="flex gap-3"><PhoneCall className="size-5 shrink-0 text-brand-600" aria-hidden />We call you to verify your details.</li>
+          <li className="flex gap-3"><PhoneCall className="size-5 shrink-0 text-brand-700" aria-hidden />We call you to verify your details.</li>
           {!!booking.price.advance && (
-            <li className="flex gap-3"><Wallet className="size-5 shrink-0 text-brand-600" aria-hidden /><span>Pay the advance of <strong>{inr(booking.price.advance)}</strong> by GPay, PhonePe or bank transfer to confirm. The balance of {inr(booking.price.balance ?? booking.price.total - booking.price.advance)} is paid at delivery.</span></li>
+            <li className="flex gap-3"><Wallet className="size-5 shrink-0 text-brand-700" aria-hidden /><span>Pay the advance of <strong>{inr(booking.price.advance)}</strong> by GPay, PhonePe or bank transfer to confirm. The balance of {inr(booking.price.balance ?? booking.price.total - booking.price.advance)} is paid at delivery.</span></li>
           )}
-          <li className="flex gap-3"><FileText className="size-5 shrink-0 text-brand-600" aria-hidden />Keep your driving licence, Aadhaar and employee ID or business proof ready.</li>
-          <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand-600" aria-hidden />We deliver the car to your address at the pickup time.</li>
+          <li className="flex gap-3"><FileText className="size-5 shrink-0 text-brand-700" aria-hidden />Keep your driving licence, Aadhaar and employee ID or business proof ready.</li>
+          <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand-700" aria-hidden />We deliver the car to your address at the pickup time.</li>
         </ol>
       </section>
 

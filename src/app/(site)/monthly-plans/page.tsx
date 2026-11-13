@@ -9,6 +9,7 @@ import { CarImage } from "@/components/cars/CarImage";
 import { SpecChips } from "@/components/cars/SpecChips";
 import { SearchForm } from "@/components/booking/SearchForm";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -27,12 +28,14 @@ export default async function MonthlyPlansPage() {
   const wa = phoneDigits(settings.whatsappNumber);
 
   return (
-    <div className="container-page py-8">
-      <h1 className="text-3xl font-extrabold">Monthly self drive car rental</h1>
-      <p className="mt-2 max-w-2xl text-muted">
-        Need a car for a month or longer? Monthly plans cost less per day than daily rentals, and we deliver the car to you.
-      </p>
-      <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+    <>
+    <PageHeader
+      eyebrow="A car for the long run"
+      title={<>Monthly self drive <em className="not-italic text-brand-500">car rental</em></>}
+      lead="Need a car for a month or longer? Monthly plans cost less per day than daily rentals, and we deliver the car to you."
+    />
+    <div className="container-page py-10">
+      <ul className=" grid gap-3 sm:grid-cols-3">
         {[
           [BadgeIndianRupee, "Lower monthly rates", "GST included"],
           [CalendarRange, "30 days or more", "Extend whenever you need"],
@@ -41,7 +44,7 @@ export default async function MonthlyPlansPage() {
           const I = Icon as typeof Truck;
           return (
             <li key={t as string} className="card flex items-center gap-3 p-4">
-              <I className="size-7 text-brand-600" aria-hidden />
+              <I className="size-7 text-brand-700" aria-hidden />
               <div><p className="font-bold">{t as string}</p><p className="text-sm text-muted">{s as string}</p></div>
             </li>
           );
@@ -75,7 +78,7 @@ export default async function MonthlyPlansPage() {
           <h2 className="mb-4 text-lg font-bold">Check monthly availability</h2>
           <SearchForm hubs={hubs} defaults={defaults} minDate={minDate} />
         </div>
-        <div className="rounded-2xl bg-brand-700 p-6 text-white">
+        <div className="rounded-[14px] bg-forest p-6 text-white sm:p-8">
           <h2 className="text-xl font-extrabold">Need a car for several months, or for your company?</h2>
           <p className="mt-2 text-white/80">Message us with how long you need it and we will send you a quote.</p>
           {wa && (
@@ -87,5 +90,6 @@ export default async function MonthlyPlansPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

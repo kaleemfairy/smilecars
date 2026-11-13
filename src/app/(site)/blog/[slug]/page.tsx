@@ -26,9 +26,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   if (!post) notFound();
   const others = BLOG_POSTS.filter((p) => p.slug !== post.slug);
   return (
-    <article className="container-page max-w-3xl py-8">
+    <article className="container-page max-w-3xl py-10">
       <Link href="/blog" className="text-sm font-semibold text-brand-700 hover:underline">← All posts</Link>
-      <h1 className="mt-3 text-3xl font-extrabold leading-tight">{post.title}</h1>
+      <h1 className="mt-4 text-[32px] font-extrabold leading-[1.1] sm:text-[42px]">{post.title}</h1>
       {post.date && <p className="mt-2 text-sm text-muted">{fmtDate(Date.parse(`${post.date}T12:00:00+05:30`))}</p>}
       <div className="mt-4">
         <Prose sections={post.sections} />

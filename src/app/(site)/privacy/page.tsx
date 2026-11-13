@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getPublicSettings } from "@/lib/data";
+import { PageHeader } from "@/components/site/PageHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Privacy policy" };
@@ -9,8 +10,9 @@ export const metadata: Metadata = { title: "Privacy policy" };
 export default async function PrivacyPage() {
   const s = await getPublicSettings();
   return (
-    <div className="container-page max-w-3xl py-8">
-      <h1 className="text-3xl font-extrabold">Privacy policy</h1>
+    <>
+    <PageHeader narrow eyebrow="Your data" title="Privacy policy" />
+    <div className="container-page max-w-3xl py-10">
       <div className="prose-page mt-4">
         <p>This policy explains what personal information {s.businessName} collects on this website and how we use it.</p>
         <h2>What we collect</h2>
@@ -51,5 +53,6 @@ export default async function PrivacyPage() {
         <p>{s.businessName}, {s.address}.</p>
       </div>
     </div>
+    </>
   );
 }

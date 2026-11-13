@@ -12,7 +12,7 @@ export function EnquiryForm() {
   if (state.ok) {
     return (
       <div className="card p-6 text-center" role="status">
-        <CheckCircle2 className="mx-auto size-12 text-brand-600" aria-hidden />
+        <CheckCircle2 className="mx-auto size-12 text-brand-700" aria-hidden />
         <p className="mt-3 text-lg font-bold">{state.message}</p>
       </div>
     );

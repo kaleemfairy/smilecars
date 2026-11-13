@@ -64,7 +64,7 @@ export default async function CarPage(props: PageProps<"/cars/[slug]">) {
               <h2 className="text-lg font-bold">Features</h2>
               <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                 {car.features.map((f) => (
-                  <li key={f} className="flex gap-2 text-sm"><Check className="size-5 text-brand-600" aria-hidden />{f}</li>
+                  <li key={f} className="flex gap-2 text-sm"><Check className="size-5 text-brand-700" aria-hidden />{f}</li>
                 ))}
               </ul>
             </section>
@@ -74,13 +74,13 @@ export default async function CarPage(props: PageProps<"/cars/[slug]">) {
             <h2 className="text-lg font-bold">Documents needed</h2>
             <ul className="mt-3 space-y-2 text-sm">
               {["Valid driving licence", "Aadhaar card", "Employee ID or business proof"].map((d) => (
-                <li key={d} className="flex gap-2"><FileText className="size-5 text-brand-600" aria-hidden />{d}</li>
+                <li key={d} className="flex gap-2"><FileText className="size-5 text-brand-700" aria-hidden />{d}</li>
               ))}
             </ul>
           </section>
         </div>
 
-        <aside className="card p-4 sm:p-6 lg:sticky lg:top-20">
+        <aside className="card p-4 sm:p-6 lg:sticky lg:top-24">
           <h2 className="mb-1 text-lg font-bold">Check availability</h2>
           <p className="mb-4 text-sm text-muted">See if the {car.name} is free for your dates.</p>
           <SearchForm hubs={hubs} defaults={defaults} minDate={minDate} submitLabel="See available cars" />

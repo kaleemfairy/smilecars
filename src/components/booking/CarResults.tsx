@@ -89,7 +89,7 @@ export function CarResults({
               aria-pressed={selected.includes(o)}
               onClick={() => toggle(selected, set, o)}
               className={`min-h-11 rounded-full border px-4 text-sm font-semibold ${
-                selected.includes(o) ? "border-brand-600 bg-brand-600 text-white" : "border-line-strong bg-white"
+                selected.includes(o) ? "border-brand-700 bg-brand-700 text-white" : "border-line-strong bg-white hover:border-brand-500"
               }`}
             >
               {labels[o]}
@@ -146,7 +146,7 @@ export function CarResults({
                     aria-pressed={seats === s}
                     onClick={() => setSeats(seats === s ? null : s)}
                     className={`min-h-11 rounded-full border px-4 text-sm font-semibold ${
-                      seats === s ? "border-brand-600 bg-brand-600 text-white" : "border-line-strong bg-white"
+                      seats === s ? "border-brand-700 bg-brand-700 text-white" : "border-line-strong bg-white hover:border-brand-500"
                     }`}
                   >
                     {s}+ seats
@@ -183,7 +183,7 @@ export function CarResults({
               <div className="mt-auto flex items-end justify-between gap-3 border-t border-line pt-3">
                 <div>
                   <p className="text-sm text-muted">{inr(car.dailyRate)}/day</p>
-                  <p className="text-2xl font-extrabold tabular-nums">{inr(price.total)}</p>
+                  <p className="font-display text-[22px] font-extrabold tabular-nums tracking-tight">{inr(price.total)}</p>
                   <p className="text-xs text-muted">total for {price.days} day{price.days > 1 ? "s" : ""}, GST incl.</p>
                 </div>
                 <div className="flex gap-2">
