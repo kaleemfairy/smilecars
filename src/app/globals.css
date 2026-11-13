@@ -1,24 +1,22 @@
 @import "tailwindcss";
 
 /*
-  Smile Cars design tokens.
-  Brand green #27AE90 comes from the client's logo and old website. It is too light for text
-  or white-on-green buttons (2.8:1 on white), so it is used as a field colour with dark ink on
-  it, and darker steps of the same hue carry buttons (600 = 5.0:1 with white) and links (800).
-  WhatsApp green is only for WhatsApp buttons.
+  Smile Cars design tokens (from the Stitch "Reliable Heritage Mobility" system).
+  Teal = brand and structure, yellow = the main action on a screen,
+  WhatsApp green = WhatsApp buttons only.
 */
 @theme {
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #f2faf7;
-  --color-brand-100: #e2f4ee;
-  --color-brand-200: #c1ebdf;
-  --color-brand-500: #27ae90;
-  --color-brand-600: #1c7d67;
-  --color-brand-700: #19705d;
-  --color-brand-800: #155c4c;
-  --color-brand-900: #0e3e34;
-  --color-brand-ink: #0b2620; /* text on brand-500 fields: 6.2:1 */
+  /* Green from the client logo (#17b59e). It is too light for text on white (2.4:1),
+     so text and buttons use the darker shades of the same hue (600 = 5.0:1). */
+  --color-brand-50: #eefbf8;
+  --color-brand-100: #d1f4ec;
+  --color-brand-500: #17b59e;
+  --color-brand-600: #1b7d6a;
+  --color-brand-700: #18715f;
+  --color-brand-800: #145c4d;
+  --color-brand-900: #0a322a;
 
   --color-accent-300: #fde68a;
   --color-accent-400: #facc15;
@@ -27,19 +25,14 @@
   --color-whatsapp: #25d366;
   --color-whatsapp-dark: #1da851;
 
-  --color-canvas: #f3f6f5; /* cool stone, one tone step under white panels */
-  --color-ink: #16211f;
-  --color-muted: #4a5a57; /* secondary notes only: 7:1 on white */
-  --color-line: #dfe7e4;
-  --color-line-strong: #b9c7c3;
+  --color-canvas: #fafaf7;
+  --color-ink: #1e293b;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
 
-  /* Readable floor: nothing below 13px; running text 16px or more. */
-  --text-xs: 0.8125rem;
-  --text-xs--line-height: 1.35;
-  --text-sm: 0.9375rem;
-  --text-sm--line-height: 1.45;
-
-  --radius-panel: 1rem;
+  --shadow-card: 0 4px 20px -2px rgb(30 41 59 / 0.06);
+  --shadow-raised: 0 10px 25px -4px rgb(27 125 106 / 0.14);
 }
 
 @layer base {
@@ -54,9 +47,6 @@
   :focus-visible {
     outline: 2px solid var(--color-brand-600);
     outline-offset: 2px;
-  }
-  ::selection {
-    background: var(--color-brand-200);
   }
 }
 
@@ -73,82 +63,73 @@
     }
   }
 
-  /* A panel is one tone step above the stone ground: no border, no shadow. */
   .card {
     background: #fff;
-    border-radius: var(--radius-panel);
+    border: 1px solid var(--color-line);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-card);
   }
 
-  /* Buttons: flat, pill-shaped, one fill each. */
   .btn {
     display: inline-flex;
     min-height: 48px;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 9999px;
-    padding: 0.625rem 1.375rem;
-    font-weight: 700;
-    transition: background-color 150ms, color 150ms, transform 120ms;
-  }
-  .btn:active:not(:disabled) {
-    transform: scale(0.97);
+    border-radius: 0.75rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 600;
+    transition: background-color 150ms, border-color 150ms, color 150ms;
   }
   .btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
   .btn-primary {
+    background: var(--color-accent-400);
+    color: var(--color-ink);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--color-accent-500);
+  }
+  .btn-secondary {
+    border: 1.5px solid var(--color-brand-600);
+    color: var(--color-brand-600);
+    background: transparent;
+  }
+  .btn-secondary:hover:not(:disabled) {
+    background: var(--color-brand-50);
+  }
+  .btn-teal {
     background: var(--color-brand-600);
     color: #fff;
   }
-  .btn-primary:hover:not(:disabled) {
-    background: var(--color-brand-800);
-  }
-  .btn-secondary {
-    background: var(--color-brand-100);
-    color: var(--color-brand-900);
-  }
-  .btn-secondary:hover:not(:disabled) {
-    background: var(--color-brand-200);
-  }
-  .btn-teal {
-    background: var(--color-brand-900);
-    color: #fff;
-  }
   .btn-teal:hover:not(:disabled) {
-    background: var(--color-brand-800);
-  }
-  .btn-paper {
-    background: #fff;
-    color: var(--color-brand-900);
-  }
-  .btn-paper:hover:not(:disabled) {
-    background: var(--color-brand-100);
+    background: var(--color-brand-700);
   }
   .btn-whatsapp {
     background: var(--color-whatsapp);
-    color: #0b2620;
+    color: #fff;
   }
   .btn-whatsapp:hover:not(:disabled) {
     background: var(--color-whatsapp-dark);
   }
   .btn-sm {
     min-height: 40px;
-    padding: 0.375rem 1rem;
-    font-size: 0.9375rem;
+    padding: 0.375rem 0.875rem;
+    font-size: 0.875rem;
   }
 
   .field-label {
     display: block;
     margin-bottom: 0.375rem;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 600;
   }
   .field {
     width: 100%;
     min-height: 48px;
-    border: 1px solid var(--color-line-strong); /* taste-skill-ignore: form field */
+    border: 1px solid var(--color-line-strong);
     border-radius: 0.75rem;
     background: #fff;
     padding: 0.625rem 0.875rem;
@@ -163,131 +144,32 @@
     min-height: 96px;
   }
 
-  /* Floating buttons really float over the page, so they keep a shadow. */
-  .float-shadow {
-    box-shadow: 0 6px 18px rgb(11 38 32 / 0.25); /* taste-skill-ignore: floating overlay */
-  }
-
-  /* Small facts: a filled tag, no outline. */
   .chip {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
     border-radius: 9999px;
-    background: var(--color-brand-100);
+    border: 1px solid var(--color-line);
+    background: #fff;
     padding: 0.125rem 0.625rem;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: var(--color-brand-900);
+    color: var(--color-muted);
   }
 
   .prose-page h2 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    font-size: 1.375rem;
-    font-weight: 800;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
   .prose-page p,
   .prose-page li {
-    font-size: 1.0625rem;
     line-height: 1.7;
-    color: var(--color-ink);
+    color: #334155;
   }
   .prose-page ul {
     list-style: disc;
     padding-left: 1.25rem;
-  }
-
-  /* Hero photographs crossfade: four stacked pictures, 6s each. */
-  .crossfade > * {
-    animation: crossfade 24s infinite;
-    opacity: 0;
-  }
-  /* The first picture starts mid-cycle (negative delay) so it is visible on load. */
-  .crossfade > *:nth-child(1) {
-    opacity: 1;
-    animation-delay: -2s;
-  }
-  .crossfade > *:nth-child(2) {
-    animation-delay: 4s;
-  }
-  .crossfade > *:nth-child(3) {
-    animation-delay: 10s;
-  }
-  .crossfade > *:nth-child(4) {
-    animation-delay: 16s;
-  }
-
-  /* Slow drift on a photograph. */
-  .drift {
-    animation: drift 18s ease-in-out infinite alternate;
-  }
-
-  /* The booking slip: a straight top edge and a zigzag cut at the foot. */
-  .slip {
-    --zz: 14px;
-    clip-path: polygon(
-      0 0, 100% 0, 100% calc(100% - var(--zz)),
-      95% 100%, 90% calc(100% - var(--zz)), 85% 100%, 80% calc(100% - var(--zz)),
-      75% 100%, 70% calc(100% - var(--zz)), 65% 100%, 60% calc(100% - var(--zz)),
-      55% 100%, 50% calc(100% - var(--zz)), 45% 100%, 40% calc(100% - var(--zz)),
-      35% 100%, 30% calc(100% - var(--zz)), 25% 100%, 20% calc(100% - var(--zz)),
-      15% 100%, 10% calc(100% - var(--zz)), 5% 100%, 0 calc(100% - var(--zz))
-    );
-  }
-  .leader {
-    flex: 1;
-    min-width: 1.5rem;
-    margin-inline: 0.5rem;
-    height: 4px;
-    align-self: center;
-    background: radial-gradient(circle, var(--color-line-strong) 1.5px, transparent 2px) 0 0 / 8px 4px repeat-x; /* taste-skill-ignore: dotted leader on the booking slip */
-  }
-}
-
-/* Parts of each section rise into place as they enter the screen (where the browser can link
-   animation to scrolling). Content is always visible without it. */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .reveal {
-      animation: rise linear both;
-      animation-timeline: view();
-      animation-range: entry 5% entry 45%;
-    }
-  }
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(28px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes crossfade {
-  0% { opacity: 0; }
-  7% { opacity: 1; }
-  25% { opacity: 1; }
-  32% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@keyframes drift {
-  from { transform: scale(1.02) translateX(0); }
-  to { transform: scale(1.08) translateX(-1.5%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .crossfade > *,
-  .drift {
-    animation: none;
-  }
-  .crossfade > *:not(:first-child) {
-    opacity: 0;
-  }
-  .btn {
-    transition: none;
   }
 }

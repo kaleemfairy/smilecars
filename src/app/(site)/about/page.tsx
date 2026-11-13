@@ -74,7 +74,7 @@ export default async function AboutPage() {
       <div className="mt-8">
         <TrustStrip />
       </div>
-      <section id="reviews" className="mt-10 scroll-mt-20">
+      <section className="mt-10">
         <h2 className="mb-4 text-xl font-extrabold">What our customers say</h2>
         <Testimonials />
       </section>

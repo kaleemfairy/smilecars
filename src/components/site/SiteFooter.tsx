@@ -54,7 +54,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
           </ul>
         </div>
         <div>
-          <h2 className="text-base font-extrabold text-white">Quick links</h2>
+          <h2 className="text-sm font-bold uppercase tracking-wide text-white">Quick links</h2>
           <ul className="mt-3 space-y-2 text-sm">
             {[
               ["/book", "Book a car"],
@@ -74,7 +74,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
           </ul>
         </div>
         <div>
-          <h2 className="text-base font-extrabold text-white">Areas we serve</h2>
+          <h2 className="text-sm font-bold uppercase tracking-wide text-white">Areas we serve</h2>
           <ul className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-sm md:grid-cols-1">
             {LOCATIONS.slice(0, 10).map((l) => (
               <li key={l.slug}>
@@ -84,7 +84,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
           </ul>
         </div>
       </div>
-      <p className="container-page mt-12 text-sm text-white/75">
+      <p className="container-page mt-10 border-t border-white/15 pt-6 text-xs text-white/60">
         © {new Date().getFullYear()} {settings.businessName}. All rights reserved.
       </p>
     </footer>

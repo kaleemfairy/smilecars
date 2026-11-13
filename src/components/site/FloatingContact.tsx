@@ -16,7 +16,7 @@ export function FloatingContact({ settings }: { settings: Settings }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with us on WhatsApp"
-          className="flex size-14 items-center justify-center rounded-full bg-whatsapp text-white border-2 border-white hover:bg-whatsapp-dark"
+          className="flex size-14 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg hover:bg-whatsapp-dark"
         >
           <WhatsAppIcon className="size-7" />
         </a>
@@ -25,7 +25,7 @@ export function FloatingContact({ settings }: { settings: Settings }) {
         <a
           href={`tel:+${phoneDigits(phone)}`}
           aria-label={`Call us on ${phone}`}
-          className="flex size-14 items-center justify-center rounded-full bg-brand-600 text-white border-2 border-white hover:bg-brand-700"
+          className="flex size-14 items-center justify-center rounded-full bg-brand-600 text-white shadow-lg hover:bg-brand-700"
         >
           <Phone className="size-6" aria-hidden />
         </a>
